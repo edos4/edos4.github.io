@@ -21,8 +21,8 @@
 	<script type="text/javascript">
 		function createWindow() {
 			$.window({
-				x: Math.floor(Math.random() * ($(window).width() )),
-				y: Math.floor(Math.random() * ($(window).height() )),
+				x: Math.floor(Math.random() * ($(window).width() - ($(window).width()/2))),
+				y: Math.floor(Math.random() * ($(window).height() - ($(window).height()/2))),
 				icon: "http://www.google.com/favicon.ico",
 				title: "Hello World!",
 				content: "<h1>Hello World!</h1><input type=\"button\" onclick=\"createWindow();\" value=\"Create a window\"/>",
