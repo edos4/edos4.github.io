@@ -1,0 +1,18 @@
+html,body{height:100%}
+#mainNav{background:none;border:none;color:white}
+#mainNav a{color:white}
+#amenities{color:white;}
+header{height:500px;background:url('/img/header.jpg');background-size:cover;background-attachment: fixed}
+.section-heading{padding-bottom: 50px; color:#ccc;font-weight: 100;}
+.link{padding:9px 15px; border:.5px solid white; color:white;margin-top:90px}
+.link:hover{padding:5px 15px; border:.5px solid white; color:white;}
+.amenities{background:#fff}
+.intro-text{height:500px; text-align: center; padding-top:200px;color:white;}
+.base{height:300px; padding:0}
+.base h2{padding-top:100px;}
+.room2{background:url(/img/room3.jpg);height:100%;background-size:cover;}
+.room1{background:url(/img/room2.jpg);height:100%;background-size:cover;}
+.room3{background:url(/img/room1.jpg);height:100%;background-size:cover;}
+#about{padding:70px; height:50%;}
+.about{color:#ccc; font-weight:100; letter-spacing: 1px; font-size:20px}
+#contact{background:url(/img/lobby2.jpg);height:auto;background-size:cover;padding:80px}
