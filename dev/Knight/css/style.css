@@ -595,8 +595,8 @@ border: 2px solid #fff;
     height: 200px;
 }
 .team-leader a:hover > img{
-    transform: scale(1.1);
-    transition: 1s ease all;
+    transform: scale(1.4);
+    transition: .7s ease all;
 }
 .team-leader ul{
 	display:block;
@@ -796,7 +796,7 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	background:url(../img/1.jpg) left top repeat;
 	padding:35px 0 35px;
 }
 .footer-logo{
