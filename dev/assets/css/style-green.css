@@ -20,6 +20,9 @@ GOOGLE FONT
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu); /* FREE GOOGLE FONT */
 @import url(http://fonts.googleapis.com/css?family=Oswald); /* FREE GOOGLE FONT */
+html,body{
+    height:100%;
+}
 a{
     position:relative;
     z-index:9999;
