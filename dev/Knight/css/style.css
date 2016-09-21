@@ -593,6 +593,13 @@ border: 2px solid #fff;
 	display:block;
 	border-radius:50%;
     height: 200px;
+    width:200px;
+}
+.team-leader img{
+	display:block;
+	border-radius:50%;
+    height: 200px;
+    width:200px;
 }
 .team-leader a:hover > img{
     transform: scale(1.4);
