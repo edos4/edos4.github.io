@@ -13,7 +13,10 @@
 ---------------------------------*/
 html,body{
     height:100%;
+    min-width: 100%;
+
 }
+
 #particles-js{
     position:absolute;
     top:0;
