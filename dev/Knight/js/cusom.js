@@ -13,6 +13,6 @@ window.onscroll = function() {
     
 })(window);
 
-particlesJS.load('particles-js', 'http://convonaut.com/dev/Knight/particles.json', function() {
+particlesJS.load('particles-js', 'http://convonaut.com/dev/Knight/js/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
