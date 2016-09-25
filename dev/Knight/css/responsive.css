@@ -44,6 +44,18 @@
 }
 
 @media only screen and (max-width: 767px) {
+        #phone{
+    display:none;
+    }
+    #service{
+        height:auto;
+    }
+    #Features{
+    background: url('../img/phoneBg.jpg') no-repeat;
+    background-size:cover;
+    background-attachment: none;
+        background-position: -400px 0px;
+}
 	/****Mobile Landscape 480 Container 100% ****/
 	body{ font-size:12px;}
 	h2{ font-size:26px;}
@@ -87,12 +99,16 @@
 	.isotope{ width:400px; margin:0px auto;}
 	.Portfolio-box{}
 	.portfolioContainer{ width:350px; margin:0px auto !important; } */
-	
+
 	
 }
 
 @media only screen and (max-width: 479px) {
 	/****Mobile Portrait 320 ****/
+        #phone{
+    display:none;
+    }
+    
 	.contact-info-box{ margin-left:0px;}
 	.header{ padding:40px;}
 	.social-link{ margin-left:0px;}
