@@ -1,6 +1,6 @@
-$(document).ready(function(){       
+$(document).ready(function(){
             var scroll_pos = 0;
-            $(document).scroll(function() { 
+            $(document).scroll(function() {
                 scroll_pos = $(this).scrollTop();
                 if(scroll_pos > 300) {
                     $("#mainNav").css('background-color', 'rgba(201,183,138,.6)');
@@ -24,4 +24,10 @@ $(document).ready(function(){
                 }
               });
             });
+
+            //open modal
+      $('.link').on('click', function(e){
+        e.preventDefault();
+        $('#myModal').modal('show').find('.modal-body').load($(this).attr('href'));
+      });
 });

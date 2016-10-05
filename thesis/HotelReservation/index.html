@@ -5,7 +5,7 @@
 
     <title>Hotel Reservation System</title>
 
-   
+
     <link href="addons/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="addons/bootstrap/js/bootstrap.min.js"></script>
@@ -14,7 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/custom.css" rel="stylesheet">
 
-    
+
 
 </head>
 
@@ -23,13 +23,13 @@
 
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
-           
+
             <div class="navbar-header page-scroll">
-                
+
                 <a class="navbar-brand page-scroll" href="#page-top">Hotel Reservation System</a>
             </div>
 
-           
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
@@ -38,28 +38,28 @@
                     <li>
                         <a class="page-scroll" href="#amenities">Rooms</a>
                     </li>
-                    
+
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                   
+
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            
+
         </div>
-       
+
     </nav>
 
-    
+
     <header>
         <div class="container">
             <div class="intro-text">
                 <h1>Hotel Reservation System</h1>
-                
-                <a class="link" href="#amenities">View our Amenities</a>
+
+                <a class="link" href="booking.php" >Book a Room</a>
             </div>
         </div>
     </header>
@@ -87,13 +87,13 @@
                     <div class="room3">
                         <h2>Double Bed</h2>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
     </section>
 
-   
+
     <!-- About Section -->
     <section id="about">
         <div class="container">
@@ -104,8 +104,8 @@
         </div>
     </section>
 
-  
-   
+
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -136,8 +136,8 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div id="success" style="padding:10px;"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>                         
-                            </div>                    
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
                             <div class="col-md-6 text-center">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15681.548039011028!2d122.54924873182792!3d10.70460322792382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90d3622f8fac7e66!2sDays+Hotel+Iloilo!5e0!3m2!1sen!2s!4v1472768843264" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
@@ -155,7 +155,7 @@
                     <span class="copyright">Copyright &copy; Hotel Reservation System</span>
                 </div>
                 <div class="col-md-4">
-                    
+
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
@@ -168,9 +168,25 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
- 
 </body>
 
 </html>
