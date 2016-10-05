@@ -11,6 +11,10 @@
 /* Float Elements 
 
 ---------------------------------*/
+.client-logo{
+	max-width:120px;
+	max-height:60px;
+}
 html,body{
     height:100%;
     min-width: 100%;
