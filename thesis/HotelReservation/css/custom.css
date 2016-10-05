@@ -1,4 +1,4 @@
-html,body{height:100%;background:#F5F3EE !important;}
+html,body{height:100%;background:#F5F3EE !important; overflow-x: hidden;}
 #mainNav{background:none;border:none;color:white}
 #mainNav a{color:white}
 #amenities{color:white;}
