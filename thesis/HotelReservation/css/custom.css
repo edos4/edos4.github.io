@@ -1,18 +1,21 @@
-html,body{height:100%}
+html,body{height:100%;background:#F5F3EE !important;}
 #mainNav{background:none;border:none;color:white}
 #mainNav a{color:white}
 #amenities{color:white;}
-header{height:500px;background:url('../img/header.jpg');background-size:cover;background-attachment: fixed}
-.section-heading{padding-bottom: 50px; color:#ccc;font-weight: 100;}
-.link{padding:9px 15px; border:.5px solid white; color:white;margin-top:90px}
-.link:hover{padding:5px 15px; border:.5px solid white; color:white;}
-.amenities{background:#fff}
+header{height:600px;background:url('../img/header.jpg');background-size:cover;background-attachment: fixed}
+.section-heading{padding-bottom: 50px; color:#585858;font-weight: 300;font-family: 'Playfair Display', serif; letter-spacing: 1.1px;}
+.link{padding:9px 15px; border:.5px solid white; color:white;margin-top:120px}
+.link:hover{padding:9px 15px; border:.5px solid white; color:white;}
+.amenities{background:#F5F3EE}
 .intro-text{height:500px; text-align: center; padding-top:200px;color:white;}
+.intro-text h1{margin: 50px}
 .base{height:300px; padding:0}
 .base h2{padding-top:100px;}
-.room2{background:url(../img/room3.jpg);height:100%;background-size:cover;}
-.room1{background:url(../img/room2.jpg);height:100%;background-size:cover;}
-.room3{background:url(../img/room1.jpg);height:100%;background-size:cover;}
-#about{padding:70px; height:50%;}
-.about{color:#ccc; font-weight:100; letter-spacing: 1px; font-size:20px}
-#contact{background:url(../img/lobby2.jpg);height:auto;background-size:cover;padding:80px}
+.room2{background:url('../img/room3.jpg');height:100%;background-size:cover;}
+.room1{background:url('../img/room2.jpg');height:100%;background-size:cover;}
+.room3{background:url('../img/room1.jpg');height:100%;background-size:cover;}
+#about{padding:70px; height:50%;background:#F5F3EE;}
+.about{color:#6f6f6f; font-weight:100; letter-spacing: 1px}
+#contact{background:url('../img/lobby2.jpg');height:auto;background-size:cover;padding:70px;color:white !important;}
+#contact .section-heading{color:white;}
+.modal-body{max-height: 300px;overflow-y: scroll;}

@@ -7,7 +7,11 @@
 
    
     <link href="addons/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="addons/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/custom.css" rel="stylesheet">
 
     
@@ -55,7 +59,7 @@
             <div class="intro-text">
                 <h1>Hotel Reservation System</h1>
                 
-                <a class="link" href="#amenities" >View our Amenities</a>
+                <a class="link" href="#amenities">View our Amenities</a>
             </div>
         </div>
     </header>
@@ -127,23 +131,15 @@
                                     <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                
-                            </div>
-                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" rows="6" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                            </div>
-                               
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15681.548039011028!2d122.54924873182792!3d10.70460322792382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90d3622f8fac7e66!2sDays+Hotel+Iloilo!5e0!3m2!1sen!2s!4v1472768843264" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
-                            
-                            <div class="col-lg-12 text-center">
                                 <div id="success" style="padding:10px;"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">Send Message</button>                         
+                            </div>                    
+                            <div class="col-md-6 text-center">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15681.548039011028!2d122.54924873182792!3d10.70460322792382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90d3622f8fac7e66!2sDays+Hotel+Iloilo!5e0!3m2!1sen!2s!4v1472768843264" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </form>
