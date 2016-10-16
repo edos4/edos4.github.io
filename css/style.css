@@ -907,4 +907,5 @@ border: 2px solid #fff;
 	-webkit-animation-delay: 1.2s; 
 }
 
-
+.we-create li:first-child{
+max-width:360px}
