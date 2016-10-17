@@ -605,11 +605,11 @@ border: 2px solid #fff;
 .team-leader img{
 	display:block;
 	border-radius:50%;
-    height: 200px;
-    width:200px;
+    height: 210px;
+    width:210px;
 }
 .team-leader a:hover > img{
-    transform: scale(1.4);
+    transform: scale(1.01);
     transition: .7s ease all;
 }
 .team-leader ul{
