@@ -1,3 +1,12 @@
+#spinner {
+         position: fixed;
+         left: 0px;
+         top: 0px;
+         width: 100%;
+         height: 100%;
+         z-index: 1999;
+         background: no-repeat #ffffff;
+         }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -195,4 +204,3 @@
 .pace.pace-inactive {
   display: none;
 }
-
