@@ -67,6 +67,7 @@
   -webkit-box-shadow: 120px 0 #fff, 240px 0 #fff;
   -ms-box-shadow: 120px 0 #fff, 240px 0 #fff;
   box-shadow: 120px 0 #fff, 240px 0 #fff;
+  z-index: 2000;
 }
 
 .pace .pace-progress:after {
