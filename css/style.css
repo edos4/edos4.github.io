@@ -554,9 +554,9 @@ border: 2px solid #fff;
 	margin:0 auto;
 }
 .team-leader-box{
-	width:20.66%;
-	margin-right: 3.82979%;
-	height: 490px;
+	width:23%;
+	margin-right:1%;
+	height: auto;
 	overflow: hidden;
 	text-align: center;
 	float: left;
@@ -569,7 +569,7 @@ border: 2px solid #fff;
 .team-leader{
     overflow: hidden;
 	width:auto;
-	height:auto;
+	height:210px;
 	position:relative;
 	border-radius:50%;
 	box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
@@ -599,7 +599,7 @@ border: 2px solid #fff;
 .team-leader img{
 	display:block;
 	border-radius:50%;
-    height: 200px;
+    height: 210px;
     width:200px;
 }
 .team-leader img{
