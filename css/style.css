@@ -599,8 +599,8 @@ border: 2px solid #fff;
 .team-leader img{
 	display:block;
 	border-radius:50%;
-    height: 210px;
-    width:200px;
+    height: 100%;
+    width:100%;
 }
 .team-leader img{
 	display:block;
@@ -608,10 +608,11 @@ border: 2px solid #fff;
     height: 220px;
     width:220px;
 }
-.team-leader a:hover > img{
-    transform: scale(1.01);
+/*.team-leader a:hover > img{
+    transform: scale(1.1);
     transition: .7s ease all;
 }
+*/
 .team-leader ul{
 	display:block;
 	opacity:0;
