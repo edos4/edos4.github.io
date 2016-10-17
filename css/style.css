@@ -252,7 +252,7 @@ color: #fff;
     background-attachment: fixed;
 }
 #service{
-    height:90%;
+    height:auto;
     overflow:hidden;
     position:relative;
 }
