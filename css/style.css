@@ -605,8 +605,8 @@ border: 2px solid #fff;
 .team-leader img{
 	display:block;
 	border-radius:50%;
-    height: 210px;
-    width:210px;
+    height: 220px;
+    width:220px;
 }
 .team-leader a:hover > img{
     transform: scale(1.01);
