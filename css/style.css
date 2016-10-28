@@ -172,7 +172,7 @@ color: #fff;
 
 .link{
 	padding:15px 35px;
-	background:#7cc576;
+	background:#2389c5;
 	color:#fff !important;
 	font-size:16px;
 	font-weight:400;
@@ -188,12 +188,12 @@ color: #fff;
 }
 .link:hover {
 	text-decoration:none;
-	color:#7cc576 !important;
+	color:#2389c5 !important;
 	background:#fff;
 }
 
 .link:active, .link:focus {
-	background: #7cc576;
+	background: #2389c5;
 	text-decoration:none;
 	color:#fff !important;
 }
@@ -232,7 +232,7 @@ color: #fff;
 
 .main-nav li a:hover{ 
 	text-decoration:none;
-	color: #7cc576;
+	color: #2389c5;
 }
 
 .small-logo{ 
@@ -252,7 +252,7 @@ color: #fff;
     background-attachment: fixed;
 }
 #service{
-    height:90%;
+    height:auto;
     overflow:hidden;
     position:relative;
 }
@@ -348,7 +348,7 @@ color: #fff;
 .Learn-More{
 	display:inline-block;
 	padding:0 5px 0 0;
-	color:#7cc576;
+	color:#2389c5;
 	font-size:16px;
 	text-transform:uppercase;
     font-family: 'Roboto', sans-serif;
@@ -397,7 +397,7 @@ color: #fff;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-	background:#7cc576;
+	background:#2389c5;
 	color:#fff;
 	text-decoration:none;
 }
@@ -428,7 +428,7 @@ color: #fff;
 }
 
 .Portfolio-nav li a.current{
-	background:#7cc576;
+	background:#2389c5;
 	color:#fff;
 	text-decoration:none;
 }
@@ -502,13 +502,13 @@ img {
 	width:68px;
 	height:68px;
 	margin:0 auto;
-	border:2px solid #7cc576;
+	border:2px solid #2389c5;
 	border-radius:50%;
 	display:block;
 	line-height:68px;
 	text-align:center;
 	font-size:27px;
-	color:#7cc576;
+	color:#2389c5;
 	cursor: pointer;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -521,7 +521,7 @@ border: 2px solid #fff;
 }
 
 .c-logo-part{
-	background:#7cc576;
+	background:#2389c5;
 	padding:25px 0;
     filter: alpha(opacity=60);
 }
@@ -554,9 +554,9 @@ border: 2px solid #fff;
 	margin:0 auto;
 }
 .team-leader-box{
-	width:20.66%;
-	margin-right: 3.82979%;
-	height: 490px;
+	width:23%;
+	margin:1%;
+	height: auto;
 	overflow: hidden;
 	text-align: center;
 	float: left;
@@ -569,7 +569,7 @@ border: 2px solid #fff;
 .team-leader{
     overflow: hidden;
 	width:auto;
-	height:auto;
+	height:210px;
 	position:relative;
 	border-radius:50%;
 	box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
@@ -599,19 +599,20 @@ border: 2px solid #fff;
 .team-leader img{
 	display:block;
 	border-radius:50%;
-    height: 200px;
-    width:200px;
+    height: 100%;
+    width:100%;
 }
 .team-leader img{
 	display:block;
 	border-radius:50%;
-    height: 200px;
-    width:200px;
+    height: 220px;
+    width:220px;
 }
-.team-leader a:hover > img{
-    transform: scale(1.4);
+/*.team-leader a:hover > img{
+    transform: scale(1.1);
     transition: .7s ease all;
 }
+*/
 .team-leader ul{
 	display:block;
 	opacity:0;
@@ -773,7 +774,7 @@ border: 2px solid #fff;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .input-text:focus {
-	border: 1px solid #7cc576;
+	border: 1px solid #2389c5;
 	outline:0;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);	
@@ -788,7 +789,7 @@ border: 2px solid #fff;
 .input-btn{
 	width:175px;
 	height:50px;
-	background:#7cc576;
+	background:#2389c5;
 	border-radius:4px;
 	color:#ffffff;
 	font-size:14px;
@@ -824,7 +825,7 @@ border: 2px solid #fff;
 	text-align:center;
 }
 .copyright a{
-	color:#7cc576;
+	color:#2389c5;
 	font-weight:600;
 	text-decoration: none;
 	transition:all 0.3s ease-in-out;
@@ -853,7 +854,7 @@ border: 2px solid #fff;
 }
 
 .res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-	color: #7cc576 !important;
+	color: #2389c5 !important;
 }
 
 .portfolioContainer{
@@ -907,4 +908,5 @@ border: 2px solid #fff;
 	-webkit-animation-delay: 1.2s; 
 }
 
-
+.we-create li:first-child{
+max-width:360px}
