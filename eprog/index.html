@@ -1,8 +1,6 @@
 <body><p style="text-align:center;"><img src="eprog.png"></p>
 <script language=JavaScript>
 <!--
-
-//Disable right mouse click Script
 //By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
 //For full source code, visit http://www.dynamicdrive.com
 
@@ -11,7 +9,7 @@ var message="";
 ///////////////////////////////////
 function clickIE4(){
 if (event.button==2){
-alert(message);
+
 return false;
 }
 }
@@ -19,7 +17,6 @@ return false;
 function clickNS4(e){
 if (document.layers||document.getElementById&&!document.all){
 if (e.which==2||e.which==3){
-alert(message);
 return false;
 }
 }
@@ -33,7 +30,7 @@ else if (document.all&&!document.getElementById){
 document.onmousedown=clickIE4;
 }
 
-document.oncontextmenu=new Function("alert(message);return false")
+document.oncontextmenu=new Function("return false")
 
 // --> 
 </script>
