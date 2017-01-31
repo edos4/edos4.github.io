@@ -478,6 +478,17 @@
 					</section>
 					<section>
 						<h3>
+							Social Engineering Toolkit
+						</h3>
+						<p>
+							The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering.  
+						</p>
+						<p>
+							http://www.social-engineer.org/framework/se-tools/computer-based/social-engineer-toolkit-set/
+						</p>
+					</section>
+					<section>
+						<h3>
 							Summary
 						</h3>
 						<li>
@@ -501,98 +512,182 @@
 				</section>
 
 				<section>
-					<h3>
-						Active Reconnaissance and Vulnerability Scanning
-					</h3>
+					<section>
+						<h3>
+							Active Reconnaissance and Vulnerability Scanning
+						</h3>
+						<p>
+							Active reconnaissance builds on the results of OSINT and passive reconnaissance, and focuses on using probes to identify the path to the target and the exposed attack surface of the target.
+						</p>
+					</section>
+					<section>
+						<h3>
+							Active Reconnaissance and Vulnerability Scanning
+						</h3>
+						<p>
+							Although active reconnaissance produces more useful information, interactions with the target system may be logged, triggering alarms such as firewalls and intrusion detection systems.
+						</p>
+					</section>
+					<section>
+						<h3>
+							Live host discovery
+						</h3>
+						<p>
+							The first step is to run network ping sweeps against a target address space and look for responses that indicate that a particular target is live and capable of responding. Historically, pinging referred to the use of ICMP; however, TCP, UDP, ICMP, and ARP traffic can also be used to identify live hosts.
+						</p>
+					</section>
+					<section>
+						<h3>
+							Live host discovery
+						</h3>
+						<p>
+							Scanners available in Kali: 
+						</p>
+						<img src="img/kali-scanner.png" />
+					</section>
+					<section>
+						<h3>
+							Live host discovery: ProTip
+						</h3>
+						<p>
+							Run multiple host discovery scans while conducting a penetration test. Certain devices may be time dependent. During one penetration test, it was discovered that the system administrator set up a game server after regular business hours. Because it was not an approved business system, multiple vulnerable services were present, and it had not received necessary security patches. Testers were able to compromise the game server and gain access to the underlying corporate network using vulnerabilities in the administrator's game server. 
+						</p>
+					</section>
+					<section>
+						<h3>
+							Port Scanning
+						</h3>
+						<p>
+							The process of connecting to TCP and UDP ports to determine what services and applications are running on the target device. Sample NMAP run:
+						</p>
+						<img src="img/nmap.png" />
+					</section>
+					<section>
+						<h3>
+							Summary
+						</h3>
+						<p>
+							During active reconnaissance, the attackers face a very real chance of their activities being identified, putting them at risk. This must be balanced against the need to map a network, find open ports, and determine the operating system and applications that are installed.
+						</p>
+					</section>
+					<section>
+						<h3>
+							Summary
+						</h3>
+						<p>
+							To reduce risks, attackers must adopt stealthy scanning techniques. Manual approaches are used to create slow scans; however, this approach is not always effective. Therefore, attackers take advantage of tools such as the Tor network and various proxying applications to hide their identity.
+						</p>
+					</section>
 				</section>
-
 				<section>
-					<section data-transition="slide" data-background-transition="zoom">
-						<p class="fragment">Act like a bad hacker</p>
-						<p class="fragment">One way to solve a big problem is to use a supercomputer.</p>
-						<p class="fragment">However, many scientists cannot afford them.</p>
-						<p class="fragment">A cheaper way to solve a big problem is to split it into smaller problems.</p>
-						<p class="fragment">These smaller problems can then be solved by computers talking to each other over a computer network.</p>
-						<p><span class="fragment">Many computers working together...</span> <span class="fragment">become as powerful as a supercomputer.</span></p>
-						<p><span class="fragment"><small>hit the arrow right key</small></span></p>
+					<section>
+						<h3>
+							Exploit. Hehe.
+						</h3>
+						<p>
+							Penetration testers and attackers must find the particular exploits that will compromise known and suspected vulnerabilities. The first place to start the search is at vendor sites; most hardware and application vendors release information about vulnerabilities when they release patches and upgrades.
+						</p>
 					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#000" data-background-transition="zoom">
-					<img src="img/yeah.png">
-				</section>
-
-				<section data-transition="slide" data-background="#000" data-background-transition="zoom">
-					<img src="img/deeper.jpg">
-				</section>
-
-				<section>
-					<section data-transition="slide" data-background="#000" data-background-transition="zoom">
-						<img src="img/why.jpg">
-						<p><small>hit the arrow down key for more fun</small></p>
+					<section>
+						<h3>
+							Exploit. Hehe.
+						</h3>
+						<p>
+							Other online sites that collect, analyze, and share information about vulnerabilities are as follows:
+						</p>
+						<li>
+							Packetstorm security available at http://packetstormsecurity.com/
+						</li>
+						<li>
+							SecurityFocus available at http://www.securityfocus.com/vulnerabilities
+						</li>
+						<li>
+							Inj3ct0r available at http://1337day.com/
+						</li>
+						<li>
+							The Exploit Database maintained by Offensive Security available at http://www.db-exploit.com
+						</li>
 					</section>
-					<section data-background="#111">
-						<h2>Performance</h2>
-						<p class="fragment">Computing intensive: The task could consume a lot of time on computing. For example, π (yellow cab)</p>
-						<p class="fragment">Data intensive: The task that deals with a lot or large size of files. For example: Google, LHC(Large Hadron Collider), People having a crush on your crush(jewk!).</p>
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							The Metasploit Framework (MSF) is an open source tool designed to facilitate penetration testing. It uses a modular approach to facilitating exploits. This makes it easier to develop and code exploits, and it also allows for complex attacks to be easily implemented.
+						</p>
 					</section>
-					<section data-background="#222">
-						<h2>Robustness</h2>
-						<p class="fragment">No SPOF (Single Point Of Failure)</p>
-						<p class="fragment">Other nodes can execute the same task executed on failed node.</p>
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							The steps for exploiting a target system using MSF can be summarized as follows:
+						</p>
+						<p>
+							<li>Choose and configure an exploit (the code that compromises a specific vulnerability on the target system).</li> 
+							<li>Check the target system to determine if it is susceptible to attack by the exploit.</li>
+							<li>Choose and configure the payload (the code that will be executed on the target system following a successful exploitation.).</li>
+							<li>Choose an encoding technique to bypass detection controls (IDs/IPs or antivirus software). 
+							<li>Execute the exploit.</li>
+						</p>
 					</section>
-					<section data-background="#222">
-						<h2>Scalability</h2>
-						<p>Our numbers are</p>
-						<p class="fragment grow">growing</p>
-						<p class="fragment">and so are our needs for more computing power.</p>
-						<p class="fragment"><small>You may press the right arrow key now. :) </small></p>
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							Example: exploit a buffer overflow vulnerability that was identified in Chasys Draw IES (Version 4.10.01). The vulnerability exists in the ReadFile function, which is used to store user-provided data in an insecure way.
+						</p>
 					</section>
-				</section>
-
-				<section>
-					<section data-background="#111">
-						<h2>Examples</h2>
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							To initiate the attack, the tester needs to generate a specially crafted BMP file and then get the victim to open that file in the Chasys application. When this occurs, it will compromise the base operating system (effective against Windows XP SP3 and Windows 7 SP1).
+						</p>
 					</section>
-					<section data-background="#222">
-						<h2>Fun</h2>
-						<p class="fragment"><a target="_blank" href="https://github.com/derv82/wpacrack">Open-source distributed Wifi-Protected Access (WPA) cracker</a>(clickable)</p>
-						<p class="fragment"><img src="img/bad.png" /></p>
-						<p class="fragment">Code is available for you to learn and tinker. Create something good out of it.</p>
-						<p class="fragment">"True magic is turning something bad into something good." -Ed Salinas</p>
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							When the exploit is completed, it creates the specially-crafted BMP file, which is stored with the default name of msf.bmp . To entice the target to open the file and avoid a default name that may be detected by some devices, it is best to change the filename to something that is more relevant to the intended target.
+						</p>
 					</section>
-					<section data-background="#333">
-						<h4>Effortless Superhero Duties</h4>
-						<small>solve these problems while listening to music</small>
-						<p><a target="_blank" href="https://www.worldcommunitygrid.org/">World Community Grid</a>:</p>
-						<p><a target="_blank" href="https://www.worldcommunitygrid.org/research/hst1/overview.do">Help stop TB</a></p>
-						<p><a target="_blank" href="https://www.worldcommunitygrid.org/research/fahb/overview.do">FightAIDS@Home</a></p>
-						<p><a target="_blank" href="https://www.worldcommunitygrid.org/research/oet1/overview.do">Outsmart Ebola Together</a></p>
-						<p><a target="_blank" href="https://www.worldcommunitygrid.org/research/mcm1/overview.do">Mapping Cancer Markers</a></p>
-						<p><a target="_blank" href="https://www.worldcommunitygrid.org/research/cep2/overview.do">The Clean Energy Project</a></p>
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							The next step is to open a new instance of msfconsole , and set up a listener for the incoming reverse TCP shell that will originate from the target when it is compromised. A simple listener is shown in the following screenshot:
+						</p>
+						<img src="img/msf1.png" />
 					</section>
-					<section data-background="#000">
-						<h4>Perks of joining the World Community Grid:</h4>
-						<p class="fragment"><img src="img/good.png" /></p>
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							Once the victim opens the crafted BMP image file in the vulnerable application, a meterpreter session is opened between the two systems. The msf prompt is replaced by the meterpreter prompt and the tester can effectively access the remote system with a command shell.
+						</p>
+						<img src="img/msf2.png" />
 					</section>
-					<section data-background="#000">
-						<h4>Contributions</h4>
-						<img src="img/perks.png">
+					<section>
+						<h3>
+							The Metasploit Framework
+						</h3>
+						<p>
+							GG/Ez/Basic. You now own the machine. If you're a bad guy, be good by imagining jail time. If you're a good guy, report this vulnerability to be fixed.
+						</p>
+						<img src="img/msf2.png" />
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>How?</h2>
+						<h2>Psheeew!</h2>
 						<img src="img/mindblown.gif" />
-					</section>
-					<section>
-						<h2>Illustranimation</h2>
-						<img src="img/workflow.gif" />
-					</section>
-					<section>
-						<h2>Pic</h2>
-						<img src="img/distcom.jpg" />
 					</section>
 				</section>
 
