@@ -1,0 +1,573 @@
+
+<!doctype html>
+<html>
+<head>
+<meta property="og:image" content="http://convonaut.com/img/logo.png" />
+<meta property="og:description" content="Beyond Conversation" />
+<meta property="og:url" content="http://www.convonaut.com/" />
+<meta property="og:title" content="Convonaut" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+<title>Convonaut</title>
+<link rel="icon" href="favicon.ico" >
+<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+<script src="js/pace.js"></script>
+<link href="css/pace.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+sans:100,400|Roboto:300,400" rel="stylesheet">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript">// <![CDATA[
+			jQuery(window).load(function() { jQuery("#spinner").fadeOut("slow"); })
+		 // ]]>
+		</script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script src="js/particles.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+
+
+</head>
+<body>
+  <!--==========messenger widget==========-->
+<style>
+    .fb_hidden{ display: none; }
+    .fb-messenger-btn{ z-index:9998; }    
+    .fb-widget{ position:absolute; top:80px; width:250px;    box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08); height:320px; margin-left:auto; margin-right:auto; left:0; right:0; border:none; border-radius:3px; }    
+    .fb-text-icon{ position:fixed; right:60px; bottom:20px; z-index:9997; width:120px; }
+    .fb-messenger-icon{ position:fixed; right:12px; bottom:12px; width:60px; z-index:9997; cursor: pointer; transition: 0.3s ease; }
+    .fb-messenger-icon:hover{ -webkit-transform: scale(0.8);-ms-transform: scale(0.92);transform: scale(0.92);transition: 0.3s ease;}
+    .fb-box{position: fixed; background: #F9F9F9; height: 100%; width: 100%; bottom:0; z-index:9998;  }
+    .fb-x{ opacity: 0.5; height: 15px;position: absolute;right: 15px;top:15px; cursor:pointer;-webkit-transition: -webkit-transform .2s ease-in-out;transition: transform .2s ease-in-out;}
+    .fb-x:hover{ opacity: 1; -webkit-transform: rotate(90deg); transform:rotate(90deg);}
+    .by{top:410px;display: block;width:100px;height:auto;opacity: 0.7;position: absolute;margin-left:auto; margin-right:auto; left:0; right:0; }
+    @media(min-width:768px) {
+    .fb-widget{ position:absolute; top:15px!important; box-shadow: 0 14px 28px rgba(0,0,0,0), 0 10px 10px rgba(0,0,0,0);}
+    .fb-box{  margin-right:5px; background: white; bottom:90px; right:20px; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); width:280px; height:380px; border-radius:3px; }
+    .fb-x{ display: none; }
+    .by{top:345px;}
+    } 
+</style>
+
+    <!--pop up button-->
+    <div id="fb-messenger-btn" class="fb-messenger-btn">
+        <!--pop-up box-->
+        <div id="fb-side-pop" class="fb-box fb_hidden">
+            <img class="fb-x" src="https://wonder-solve.com/assets/images/Pop/closeb.png" alt="close-icon"> 
+            <iframe id="fb_iframe" title="fb:page Facebook Social Plugin" class="fb-widget" src="https://www.facebook.com/v2.7/plugins/page.php?adapt_container_width=true&amp;app_id=1852423625014087&amp;channel=http://staticxx.facebook.com/connect/xd_arbiter/r/ao6eUeuGXQq.js?version=42%23cb=f2e7f31ef1f77f4&amp;domain=wonder-solve.com&amp;origin=http://wonder-solve.com/f10d6823be05b5c&amp;relation=parent.parent&amp;container_width=0&amp;height=320&amp;hide_cover=true&amp;href=https://www.facebook.com/chatmepls//&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=messages&amp;width=250">
+            </iframe>        
+            <!--Please do not remove Wonder’s branding
+            <a href="https://wonder-solve.com/en.html" target="_blank"><img src="https://wonder-solve.com/assets/images/Pop/by.svg" class="by" alt="Powered by Wonder"></a>-->
+        </div>
+        <img class="fb-text-icon" src="https://wonder-solve.com/assets/images/Pop/en.svg" alt="text-icon">
+        <img class="fb-messenger-icon" src="https://wonder-solve.com/assets/images/Pop/messenger-icon.png" alt="messenger-icon">
+    </div>
+
+<script>
+    function toggleTheWidget() {
+        var fb_pop = document.getElementById('fb-side-pop');
+        fb_pop.classList.toggle('fb_hidden');
+    }
+    var fb_btn = document.getElementById('fb-messenger-btn');
+    if (fb_btn.addEventListener) {
+        fb_btn.addEventListener('click', function () { toggleTheWidget() })
+    } else {
+        //back sopport for IE 9 and older
+        fb_btn.attachEvent('onclick', toggleTheWidget());
+    }
+</script>
+<!--==========messenger widget end==========-->
+   <div id="spinner"></div>
+<div style="overflow:hidden;">
+<header class="header" id="header">
+    <!--header-start-->
+    <div id="particles-js"></div>
+	<div class="container">
+       
+            
+      
+    	<figure class="logo animated fadeInDown delay-07s">
+        	<a href="#"><img src="img/logo.png" alt=""></a>	
+        </figure>	
+        <ul class="we-create animated fadeInUp delay-1s">
+        	<li>Automate your business with Facebook messenger bots
+</li>
+        </ul>
+            <a class="link animated fadeInUp delay-1s started" href="#service">Get Started</a>
+    </div>
+    
+
+
+</div>
+</header><!--header-end-->
+
+
+<nav class="main-nav-outer" id="test"><!--main-nav-start-->
+	<div class="container">
+        <ul class="main-nav">
+        	<li><a href="#header">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav><!--main-nav-end-->
+
+<section class="main-section" id="service"><!--main-section-start-->
+	<div class="container">
+    	<h2>Bots for any business</h2>
+    	<h6></h6>
+        <div class="row">
+        	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+            	<div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-shopping-cart"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>E-commerce Sales Bot</h3>
+                        <p>Makes your ecommerce website available on Facebook Messenger and lets your customers browse and order with ease</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-tasks"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>Task Master</h3>
+                        <p>Automates repetitive daily tasks such as booking your personal Uber ride</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-cutlery"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>Waitertron</h3>
+                        <p>Lets your customers view your menu and reserve their table right inside Messenger</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-calendar-o"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>Event Manager</h3>
+                        <p>Answers customer inquiries (can also be used for attendance checking, ticket booking and raffle promotions)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+            	<div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-facebook-square"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>Facebook Shop Ninja</h3>
+                        <p>Allows you to receive orders and answer inquiries while you're on the go</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-microphone"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>The Reporter</h3>
+                        <p>Lets you inform people in real time and broadcast messages instantly</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-bar-chart"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>The Watcher</h3>
+                        <p>Informs you of the latest trends and events; Lets you stay in the loop even without data</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-user"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>The Secretary</h3>
+                        <p>Helps you stop wasting your time with petty messages and inquiries. Let our secretary bot handle those for you</p>
+                    </div>
+                </div>
+            </div>
+            <figure id="phone" class="col-lg-4 col-sm-6 text-right wow fadeInUp delay-02s">
+            	<img  src="img/phone.jpg" alt="">
+            </figure>
+        
+        </div>
+	</div>
+</section><!--main-section-end-->
+
+
+
+<section id="Features" class="main-section alabaster"><!--main-section alabaster-start-->
+    
+	<div class="container" >
+        
+    	<div class="row">
+			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+            	
+            </figure>
+            
+        	<div class="col-lg-7 col-sm-8 featured-work">
+            	<h2>convonaut features
+</h2>
+            	<p class="padding-b">Convonaut creates the simplest way to connect with your customers using Facebook Messenger bots
+                </p>
+            	<div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-02s">
+                    	<i class="fa-magic"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-02s">
+                        <h3>Automated conversation</h3>
+                        <p>No need to reply manually to all your customer inquiries
+</p>
+                    </div>    
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-04s">
+                    	<i class="fa-gift"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-04s">
+                        <h3>Customized</h3>
+                        <p>Designed specifically for your business needs
+</p>
+                    </div>    
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-06s">
+                    	<i class="fa fa-bullhorn"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                        <h3>Broadcast messages</h3>
+                        <p>	Make announcements to all your customers who have interacted with your page</p>
+                    </div>    
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-06s">
+                    	<i class="fa fa-star"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                        <h3>Showcase Products/Services</h3>
+                        <p>	Feature your products/services right inside Facebook Messenger</p>
+                    </div>    
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-06s">
+                    	<i class="fa fa-lightbulb-o"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                        <h3>Knowledgebase</h3>
+                        <p>	Tell them more about your company and answer their common questions automatically</p>
+                    </div>    
+                </div>
+                
+                <h2>Advanced features</h2>
+                <br>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-06s">
+                    	<i class="fa fa-shopping-cart"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                        <h3>Order Taking</h3>
+                        <p>Take orders directly from Messenger — as easy as how websites/apps do it</p>
+                    </div>    
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-06s">
+                    	<i class="fa fa-trophy"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                        <h3>Rewards</h3>
+                        <p>Delight customers with rewards everytime they interact with your bot</p>
+                    </div>    
+                </div>
+                <div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-06s">
+                    	<i class="fa fa-gamepad"></i>
+                    </div>	
+                	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                        <h3>Games</h3>
+                        <p>Increase brand interaction with quizzes, guessing games and other gamification options</p>
+                    </div>    
+                </div>
+            	
+                
+                <a class="Learn-More" href="#">Learn More</a>
+            </div>
+        </div>
+	</div>
+</section><!--main-section alabaster-end-->
+
+
+
+
+<!--
+<section class="main-section client-part" id="client"><!--main-section client-part-start
+	<div class="container">
+		<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+    	<div class="row">
+        	<div class="col-lg-12">
+            	<p class="client-part-haead wow fadeInDown delay-05">It was a pleasure to work with the guys at Knight Studio. They made sure 
+we were well fed and drunk all the time!</p>
+            </div>
+        </div>
+    	<ul class="client wow fadeIn delay-05s">
+        	<li><a href="#">
+            	<img src="img/client-pic1.jpg" alt="">
+                <h3>James Bond</h3>
+                <span>License To Drink Inc.</span>
+            </a></li>
+        </ul>
+    </div>
+</section><!--main-section client-part-end-->
+<!--<div class="c-logo-part" id="clients">
+	<div class="container">
+    	<ul>
+        	<li><a href="http://cleanhome.ph"><img class="client-logo" src="img/banyera.png" alt=""></a></li>
+            <li><a href="#"><img class="client-logo" src="img/cleanHomes.png" alt=""></a></li>
+            <li><a href="#"><img class="client-logo" src="img/workhaus.png" alt=""></a></li>
+            <li><a href="#"><img class="client-logo" src="img/lunchbox.png" alt=""></a></li>
+            
+    	</ul>
+	</div>
+</div><!--c-logo-part-end-->
+<section class="main-section team" id="team"><!--main-section team-start-->
+	<div class="container">
+        <h2>team</h2>
+        <div class="team-leader-block clearfix">
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-03s"> 
+                    <a href="#">
+                    <img src="img/ed.jpg" alt="">
+                    </a>
+                </div>
+                <h3 class="wow fadeInDown delay-03s">Edwin Salinas</h3>
+                <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
+                
+            </div>
+            
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s"> 
+                    <a href="#">
+                    <img src="img/sof.jpg" alt="">
+                    </a>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Sofia Contreras</h3>
+                <span class="wow fadeInDown delay-06s">Chief Marketing Officer</span>
+               
+            </div>
+            
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-09s"> 
+                   <a href="#">
+                    <img src="img/jov.jpg" alt="">
+                    </a>
+                    
+                </div>
+                <h3 class="wow fadeInDown delay-09s">Jover Nuevaespaña</h3>
+                <span class="wow fadeInDown delay-09s">Chief Product Officer</span>
+                
+            </div>
+            
+             <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-09s"> 
+                    <a href="#">
+                    <img src="img/kurt.jpg" alt="">
+                    </a>
+                </div>
+                <h3 class="wow fadeInDown delay-09s">Kurt Lopez</h3>
+                <span class="wow fadeInDown delay-09s">Chief Design Officer</span>
+     
+          	</div>
+          
+            <div class="team-leader-box">
+               <div class="team-leader wow fadeInDown delay-09s"> 
+                   <a href="#">
+                   <img src="img/Untitled design.jpg" alt="">
+                   </a>
+               </div>
+                <h3 class="wow fadeInDown delay-09s">Keren Rogel</h3>
+                <span class="wow fadeInDown delay-09s">Lead Front End Developer</span>
+     
+            </div>
+          
+            <div class="team-leader-box">
+               <div class="team-leader wow fadeInDown delay-09s"> 
+                   <a href="#">
+                   <img src="img/andrew.jpg" alt="">
+                   </a>
+               </div>
+                <h3 class="wow fadeInDown delay-09s">Andrew Yap</h3>
+                <span class="wow fadeInDown delay-09s">Data Scientist</span>
+     
+            </div>
+            
+        </div>
+    </div>
+</section><!--main-section team-end-->
+
+
+
+<section class="business-talking"><!--business-talking-start-->
+	<div class="container">
+        <h2>Let’s Talk Business.</h2>
+    </div>
+</section><!--business-talking-end-->
+<div class="container">
+<section class="main-section contact" id="contact">
+	
+        <div class="row">
+        	<div class="col-lg-6 col-sm-6 wow fadeInLeft">
+            	<div class="contact-info-box address clearfix">
+                	<h3><i class=" icon-map-marker"></i>Address:</h3>
+                	<span>Unit 1C Alpha Salcedo Condominium, Bautista, Makati, 1227 Kalakhang Maynila</span>
+                </div>
+                <div class="contact-info-box phone clearfix">
+                	<h3><i class="fa-phone"></i>Phone:</h3>
+                	<span>+63 910 000 4878</span>
+                </div>
+                <div class="contact-info-box email clearfix">
+                	<h3><i class="fa-pencil"></i>email:</h3>
+                	<span>hello@convonaut.com</span>
+                </div>
+            	<div class="contact-info-box hours clearfix">
+                	<h3><i class="fa-clock-o"></i>Hours:</h3>
+                    <span><strong>Monday - Friday:</strong> 10am - 6pm<br></span>
+                </div>
+
+            </div>
+        	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.667396040626!2d121.02044294991563!3d14.561002989777844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c907d1bd8471%3A0xc039505095d64b16!2sThe+Office+Project!5e0!3m2!1sen!2sph!4v1488722391279" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+</section>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+        <span class="copyright">Copyright © 2016 | <a href="http://bootstraptaste.com/">Convonaut</a></span>
+    </div>
+    <!-- 
+        All links in the footer should remain intact. 
+        Licenseing information is available at: http://bootstraptaste.com/license/
+        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Knight
+    -->
+</footer>
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $('#test').scrollToFixed();
+        $('.res-nav_click').click(function(){
+            $('.main-nav').slideToggle();
+            return false    
+            
+        });
+        
+    });
+</script>
+
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+ 
+  </script>
+
+
+<script type="text/javascript">
+	$(window).load(function(){
+		
+		$('.main-nav li a, .started').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 102
+			}, 1500,'easeInOutExpo');
+			/*
+			if you don't want to use the easing effects:
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1000);
+			*/
+			event.preventDefault();
+		});
+	})
+</script>
+
+<script type="text/javascript">
+
+$(window).load(function(){
+  
+  window.fbAsyncInit = function() {
+      FB.init({
+        appId: "APP_ID",
+        xfbml: true,
+        version: "v2.6"
+      });
+
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) { return; }
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  
+  var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+
+  
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+  
+
+  
+});
+
+</script>
+</body>
+
+<script type="text/javascript" src="js/cusom.js"></script>
+
+</html>
