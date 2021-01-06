@@ -1,0 +1,204 @@
+/* 24. Single Post Page  ------------------------------------------*/
+
+.single {
+    padding: 80px 0 35px 0;
+}
+.single-content {
+    .item {
+        .info {
+            .title {
+                padding: 45px 0 0px 0;
+                h3 {
+                    font-size: 22px;
+                }
+            }
+        }
+        .blog-content {
+            .quote {
+                @extend display-flex;
+                @include justify-content(space-between);
+                margin-bottom: 30px;
+                .quote-content {
+                    width: 65%;
+                    .quote-icon {
+                        @extend display-flex;
+                        @include justify-content(space-between);
+                        padding: 40px 0;
+                        figure {
+                            width: 90px;
+                        }
+                        p {
+                            padding: 5px 0 5px 15px;
+                            margin-left: 15px;
+                            border-left: 3px solid #e5e5e5;
+                            margin-bottom: 0px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+                .fa {
+                    font-size: 35px;
+                    color: $yellow;
+                }
+                .quote-image {
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    text-align: center;
+                    figure {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .project-development {
+                .project-development-content {
+                    padding: 30px 0 40px 0;
+                    border-bottom: 1px solid $boder-color;
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .tags-socials {
+            padding: 15px 0;
+            .tags {
+                .fa {
+                    color: $yellow;
+                    margin-right: 5px;
+                }
+                a {
+                    color: #666;
+                }
+            }
+            .socials {
+                ul {
+                    padding-left: 25px;
+                    li {
+                        margin-right: 15px;
+                        &:hover {
+                            .fa-twitter {
+                                color:#00B6F1;
+                            }
+                            .fa-facebook {
+                                color:#3B5998;
+                            }
+                            .fa-google-plus {
+                                color:#C20806;
+                            }
+                            .fa-behance {
+                                color: #0057ff;
+                            }
+                            .fa-instagram {
+                                color:#2C6A93;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .comments {
+            margin-top: 40px;
+            .box-comments {
+                margin-bottom: 70px;
+            }
+            ul {
+                @extend list-type-ulli;
+                li {
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    .comment-detail {
+                        @extend display-flex;
+                        @include justify-content(space-between);
+                    }
+                    figure {
+                        width: 225px;
+                        padding-right: 20px;
+                    }
+                    .comment-info {
+                        .info-name {
+                            margin-bottom: 8px;
+                            .title {
+                                .position {
+                                    font-size: 16px;
+                                }
+                                .date-time {
+                                    font-size: 16px;
+                                }
+                            }
+                            .btn-reply {
+                                padding: 5px 14px;
+                                font-size: 14px;
+                            }
+                        }
+
+                    }
+                    .sub-comments {
+                        padding: 40px 0 0px 90px;
+                        li {
+                            figure {
+                                width: 225px;
+                            }
+                        }
+                    }
+                }
+            }
+            .leave-comment {
+                .comment-form {
+                    padding: 30px;
+                    border: 1px dashed $boder-color;
+                    overflow: hidden;
+                    form {
+                        .wrap-group {
+                            input, textarea {
+                                background: $grey-regular;
+                                padding: 20px;
+                                border: none;
+                                @include input-placeholder(#999);
+                                font-size: 16px;
+                            }
+                            input {
+                                width: 48.5%;
+                                margin-bottom: 20px;
+                                float: left;
+                                height: 50px;
+                            }
+                            textarea {
+                                width: 100%;
+                                margin-bottom: 35px;
+                                height: 140px;
+                            }
+                            .btn-submit {
+                                width: auto;
+                                display: inline-block;
+                                text-transform: uppercase;
+                                color: #fff;
+                                padding: 12px 36px;
+                                font-family: 'Raleway', sans-serif;
+                                font-size: 18px;
+                                font-weight: 600;
+                                background: $yellow;
+                            }
+                            &:nth-child(2n+1) {
+                                input {
+                                    margin-right: 10px;
+                                }
+                            }
+                            &:nth-child(2n) {
+                                input {
+                                    margin-left: 10px;
+                                }
+                                input[type="submit"] {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

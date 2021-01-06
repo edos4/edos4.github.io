@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bricktower</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/css-hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="assets/vendor/revolution/layers.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/navigation.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/settings.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/settings-source.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/tp-color-picker.css">
+    <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+    <!-- page load-->
+	<div class="images-preloader">
+	    <div id="preloader_1" class="rectangle-bounce">
+          	<span></span>
+         	<span></span>
+          	<span></span>
+          	<span></span>
+          	<span></span>
+	    </div>
+    </div>
+    <header class="header header-1">
+        <div class="hidden-tablet-landscape-up header-mobile">
+            <div class="header-top-mobile">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Consulting" />
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <form method="POST">
+                            <input type="text" placeholder="Tìm kiếm" id="search-box" name="s" value="">
+                            <div class="search-icon font-color-white display-flex-center">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="au-nav-mobile">
+                <nav class="menu-mobile">
+                    <div>
+                        <ul class="au-navbar-menu">
+                            <li class="menu-item curent-menu-item">
+                                <a href="index.html" class="font-color-black">Home</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="index.html" class="font-color-black">Home 1</a></li>
+                                    <li class="menu-item"><a href="index2.html" class="font-color-black">Home 2</a></li>
+                                    <li class="menu-item"><a href="index3.html" class="font-color-black">Home 3</a></li>
+                                    <li class="menu-item"><a href="index4.html" class="font-color-black">Home 4</a></li>
+                                    <li class="menu-item"><a href="index5.html" class="font-color-black">Home 5</a></li>
+                                    <li class="menu-item"><a href="index6.html" class="font-color-black">Home 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="services1.html" class="font-color-black">Services</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="services1.html" class="font-color-black">services 1</a></li>
+                                    <li class="menu-item"><a href="services2.html" class="font-color-black">services 2</a></li>
+                                    <li class="menu-item"><a href="services3.html" class="font-color-black">services 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="projects1.html" class="font-color-black">Projects</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="projects1.html" class="font-color-black">projects 1</a></li>
+                                    <li class="menu-item"><a href="projects2.html" class="font-color-black">projects 2</a></li>
+                                    <li class="menu-item"><a href="projects3.html" class="font-color-black">projects 3</a></li>
+                                    <li class="menu-item"><a href="projects4.html" class="font-color-black">projects 4</a></li>
+                                    <li class="menu-item"><a href="projects5.html" class="font-color-black">projects 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="aboutus.html" class="font-color-black">About</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="shop.html" class="font-color-black">Shop</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="shop.html" class="font-color-black">Shop 1</a></li>
+                                    <li class="menu-item"><a href="shop2.html" class="font-color-black">Shop 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contactus.html" class="font-color-black">Contact us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="blog.html" class="font-color-black">Blog</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="blog.html" class="font-color-black">Blog 1</a></li>
+                                    <li class="menu-item"><a href="blog2.html" class="font-color-black">Blog 2</a></li>
+                                    <li class="menu-item"><a href="blog3.html" class="font-color-black">Blog 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- <div class="clear"></div> -->
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="header-top-content display-flex">
+                        <div class="header-top-desc">
+                            We Are Specialists In Construction And Architecture!
+                        </div>
+                        <div class="header-top-info">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>(+1) 115 221 2564</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>info@example.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Building Cror, New York, NY 93459</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="hidden-tablet-landscape header-top">
+            <div class="container">
+                <div class="header-top-content display-flex">
+                    <div class="header-top-desc">
+                        We Are Specialists In Construction And Architecture!
+                    </div>
+                    <div class="header-top-info">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>(+1) 115 221 2564</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>info@example.com</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>Building Cror, New York, NY 93459</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-tablet-landscape header-bottom" id="js-navbar-fixed">
+            <div class="container">
+                <div class="header-bottom-content display-flex">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                    <nav class="menu">
+                        <div>
+                            <ul class="menu-primary">
+                                <li class="menu-item curent-menu-item">
+                                    <a href="index.html" class="font-color-black">Home</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="index.html" class="font-color-black">Home 1</a></li>
+                                        <li class="menu-item"><a href="index2.html" class="font-color-black">Home 2</a></li>
+                                        <li class="menu-item"><a href="index3.html" class="font-color-black">Home 3</a></li>
+                                        <li class="menu-item"><a href="index4.html" class="font-color-black">Home 4</a></li>
+                                        <li class="menu-item"><a href="index5.html" class="font-color-black">Home 5</a></li>
+                                        <li class="menu-item"><a href="index6.html" class="font-color-black">Home 6</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="services1.html" class="font-color-black">Services</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="services1.html" class="font-color-black">services 1</a></li>
+                                        <li class="menu-item"><a href="services2.html" class="font-color-black">services 2</a></li>
+                                        <li class="menu-item"><a href="services3.html" class="font-color-black">services 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="projects1.html" class="font-color-black">Projects</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="projects1.html" class="font-color-black">projects 1</a></li>
+                                        <li class="menu-item"><a href="projects2.html" class="font-color-black">projects 2</a></li>
+                                        <li class="menu-item"><a href="projects3.html" class="font-color-black">projects 3</a></li>
+                                        <li class="menu-item"><a href="projects4.html" class="font-color-black">projects 4</a></li>
+                                        <li class="menu-item"><a href="projects5.html" class="font-color-black">projects 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="aboutus.html" class="font-color-black">About</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="shop.html" class="font-color-black">Shop</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="shop.html" class="font-color-black">Shop 1</a></li>
+                                        <li class="menu-item"><a href="shop2.html" class="font-color-black">Shop 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contactus.html" class="font-color-black">Contact us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="blog.html" class="font-color-black">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="blog.html" class="font-color-black">Blog 1</a></li>
+                                        <li class="menu-item"><a href="blog2.html" class="font-color-black">Blog 2</a></li>
+                                        <li class="menu-item"><a href="blog3.html" class="font-color-black">Blog 3</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Heading page -->
+        <section class="heading-page">
+            <img src="assets/images/aboutus/aboutus-heading.jpg" alt="">
+            <div class="heading-page-content position-center">
+                <div class="page-title">
+                    <h1>About us</h1>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- About us -->
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us-content">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 about-us-info">
+                            <div class="section-title-left">
+                                <h2>Our Company</h2>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo semper tristique. Suspendisse convallis ante urna, quis pharetra mauris suscipit ut. 
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur efficitur ex nibh, sed luctus velit posuere sit amet. Nullam eget libero id lorem tempus cursus. 
+                                Donec fringilla est eu faucibus laoreet. Vivamus ut mattis lacus, quis ornare nibh.
+                            </p>
+                            <ul>
+                                <li>
+                                    <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <p>Duis mauris mauris congue a lobortis sit amet luctus at velit iquet.</p>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <p>Phasellus sagittis non elit quis interdum egestas felis.</p>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <p>Duis mauris mauris congue a lobortis sit amet luctus at velit ique Nam lacus ante, volutpat nec velit at, congue mollis mauris. Nullam sed tincidunt lacus, ac aliquam justo. </p>
+                                </li>
+                            </ul>
+                            <p>
+                                    Vivamus porttitor faucibus felis, vel eleifend enim malesuada ut. Integer at mi at massa efficitur convallis. Pellentesque et leo id velit interdum consectetur at in nulla. Maecenas congue hendrerit bibendum. Mauris tempor vel ligula eu aliquam. 
+                                    Donec eget nunc a velit ornare cursus vitae at eros. Cras ut nisl dui. Aliquam erat volutpat. In lobortis ex molestie.
+                            </p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 about-us-image">
+                            <img src="assets/images/aboutus/about-us.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company skills -->
+        <section class="company-skills">
+            <div class="company-skills-video">
+                <div class="skills-video bmd-modalButton" data-toggle="modal" data-target="#modal-video-01" data-bmdSrc="https://player.vimeo.com/video/112734492" data-bmdWidth="500" data-bmdHeight="281">
+                    <figure class="skills-video">
+                        <img src="assets/images/aboutus/company-skill.jpg" alt="">
+                        <span class="overgradient"> 
+                        </span>
+                        <div class="info">
+                            <div class="video-title">Our Specialists Team</div>
+                            <div class="video-desc">
+                                <span>Russell Newman - </span>General Manager
+                            </div>
+                        </div>
+                        <span class="icon-play"><i class="fa fa-play" aria-hidden="true"></i></span>
+                    </figure>
+                </div>
+            </div>
+            <div class="company-skills-content">
+                <div class="section-title-left">
+                    <h2>Company Skills</h2>
+                </div>
+                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie varius odio, vitae volutpat elit malesuada sit amet. 
+                    Aenean cursus enim eu enim porta molestie. Integer fringilla sem vel dui condimentum ullamcorper. Pellentesque eu sodales urna.</div>
+                <div class="company-skills-list">
+                    <ul>
+                        <li>
+                            <div class="title-regular-14 display-flex">
+                                <span>Construction Professional</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" style="width:90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-regular-14 display-flex">
+                                <span>Team Work</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" style="width:85%"></div>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-regular-14 display-flex">
+                                <span>Creative Architecture</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:95%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-regular-14 display-flex">
+                                <span>Practical Experience</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" style="width:80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-regular-14 display-flex">
+                                <span>Client Satisfaction</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" style="width:100%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+        
+        <!-- Our Team -->
+        <section class="about-team">
+            <div class="container">
+                <div class="section-title">
+                    <h2>our team</h2>
+                </div>
+                <div class="our-team-content">
+                    <div class="row">
+                        <article class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 item">
+                            <figure>
+                                <img src="assets/images/aboutus/our-team-1.jpg" alt="">
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                            <div class="info">
+                                <div class="title">
+                                    <h3 class="title-bold">
+                                        Brandon Sullivan
+                                    </h3>
+                                </div>
+                                <div class="desc">General Director</div>
+                            </div>
+                        </article>
+                        <article class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 item">
+                            <figure>
+                                <img src="assets/images/aboutus/our-team-2.jpg" alt="">
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                            <div class="info">
+                                <div class="title">
+                                    <h3 class="title-bold">
+                                        Eugene Graham
+                                    </h3>
+                                </div>
+                                <div class="desc">Manager</div>
+                            </div>
+                        </article>
+                        <article class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 item">
+                            <figure>
+                                <img src="assets/images/aboutus/our-team-3.jpg" alt="">
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                            <div class="info">
+                                <div class="title">
+                                    <h3 class="title-bold">
+                                        Christina Gilbert
+                                    </h3>
+                                </div>
+                                <div class="desc">Manager</div>
+                            </div>
+                        </article>
+                        <article class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 item">
+                            <figure>
+                                <img src="assets/images/aboutus/our-team-4.jpg" alt="">
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                            <div class="info">
+                                <div class="title">
+                                    <h3 class="title-bold">
+                                        Charles Collins
+                                    </h3>
+                                </div>
+                                <div class="desc">Worker</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <div class="choose-us-content">
+                <div class="choose-us-list">
+                    <div class="choose-us-list-content">
+                        <div class="section-title-left">
+                            <h2>Why Choose Us</h2>
+                        </div>
+                        <ul id="accordion">
+                            <li class="card active">
+                                <div class="card-header" id="headingOne">
+                                    <div class="title title-bold-16" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
+                                        Construction Team
+                                    </div>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna  vulpuate nec felis semper, aliquam luctus metus. Vivamus blandit vestibulum viverra Pellentesque id mi lectus. Vestibulum ut ultrices sem. Suspendisse sit amet orsollicitudin, pretium ipsum consectetur, mattis quam. Etiam auctor et quam sit gravida. Sed malesuada vitae diam at volutpat.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <div class="title title-bold-16 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
+                                        Building Protection Services
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna  vulpuate nec felis semper, aliquam luctus metus. Vivamus blandit vestibulum viverra Pellentesque id mi lectus. Vestibulum ut ultrices sem. Suspendisse sit amet orsollicitudin, pretium ipsum consectetur, mattis quam. Etiam auctor et quam sit gravida. Sed malesuada vitae diam at volutpat.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card-header" id="headingThree">
+                                    <div class="title title-bold-16 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
+                                        Professional Plumbing
+                                    </div>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna  vulpuate nec felis semper, aliquam luctus metus. Vivamus blandit vestibulum viverra Pellentesque id mi lectus. Vestibulum ut ultrices sem. Suspendisse sit amet orsollicitudin, pretium ipsum consectetur, mattis quam. Etiam auctor et quam sit gravida. Sed malesuada vitae diam at volutpat.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="statistics-company">
+                    <div class="statistics-company-content">
+                        <div class="section-title-left">
+                            <h2>Statistics Company</h2>
+                        </div>
+                        <div class="statistics-content our-process-content">
+                            <article class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/images/aboutus/icon-people-white.png" alt="">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <div class="count">10+</div>
+                                    <div class="title">
+                                        <h3 class="title-regular-14">
+                                            <a href="#" class="font-color-white">
+                                                Years Experience
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/images/aboutus/icon-door-white.png" alt="">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <div class="count">600+</div>
+                                    <div class="title">
+                                        <h3 class="title-regular-14">
+                                            <a href="#" class="font-color-white">
+                                                Completed Projects
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/images/aboutus/icon-cup-white.png" alt="">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <div class="count">15+</div>
+                                    <div class="title">
+                                        <h3 class="title-regular-14">
+                                            <a href="#" class="font-color-white">
+                                                Awards Received
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/images/aboutus/icon-heart-white.png" alt="">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <div class="count">600+</div>
+                                    <div class="title">
+                                        <h3 class="title-regular-14">
+                                            <a href="#" class="font-color-white">
+                                                Completed Projects
+                                            </a>
+                                        </h3>   
+                                    </div>
+                                </div>
+                            </article>
+                            
+                        </div>
+                        <a href="#" class="btn-global btn-yellow btn-global-yellow-hover" data-text="Get A Quote">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner -->
+        <section class="partner background-grey p-t-70 p-b-70">
+            <div class="container">
+                <div class="partner-content">
+                    <div class="row">
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-1.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-2.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-3.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-4.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-1.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01">
+		<div class="modal-dialog display-flex-center">
+			<div class="modal-content bmd-modalContent">
+
+				<div class="modal-body">
+          
+                    <div class="close-button">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
+				</div>
+
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-info">
+                            <div class="footer-logo">
+                                <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                            </div>
+                            <div class="info-desc">
+                                Quisque vehicula aliquam maurion suscipit felis fermentum id. Quisque tempor neque. Fusce nec risus vitae urna interdum comer dapibus ante ipsum primi sorci.
+                            </div>
+                            <div class="socials">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-drupal" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-links">
+                            <div class="footer-title">
+                                <h3>useful links</h3>
+                            </div>
+                            <div class="footer-links-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-contact">
+                            <div class="footer-title">
+                                <h3>Contact us</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>(+1) 115 221 2564</span>
+                                </li>
+                                <li>
+                                        <i class="fa fa-fax" aria-hidden="true"></i>
+                                    <span>+1 (855) 203-5485</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>info@example.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Building Cror, New York, NY 93459</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-work-time">
+                            <div class="footer-title">
+                                <h3>Working hours</h3>
+                            </div>
+                            <div class="work-time-desc">
+                                Our support available to help you 24 hours a day, seven days a week.
+                            </div>
+                            <div class="work-time">
+                                <span class="display-flex">
+                                    <span>Monday-Friday:</span>
+                                    <span>9am to 5pm</span>
+                                </span>
+                                <span class="display-flex">
+                                    <span>Saturday:</span>
+                                    <span>10am to 2pm</span>
+                                </span>
+                                <span class="display-flex">
+                                    <span>Sunday:</span>
+                                    <span>Closed</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content display-flex">
+                    <div class="copyright">
+                            Copyright © 2018 Construction Theme Demo - Theme by <span>AuThemes</span>
+                    </div>
+                    <div class="footer-bottom-menu">
+                        <ul>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <div id="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/isotope-docs.min.js"></script>
+    <script src="assets/vendor/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
+    <script src="assets/js/theme-map.js"></script>
+
+    <!-- REVOLUTION JS FILES -->
+    <script src="assets/js/revolution/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/js/revolution/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLICEY ADD-ON FILES -->
+    <script src='assets/js/revolution/revolution.addon.slicey.min.js?ver=1.0.0'></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <!-- <script src="assets/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script> -->
+
+    <script src="assets/js/config-contact.js"></script>
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* 16. Comming Soon Page  ------------------------------------------*/
+.comming-soon {
+    background: #fff url('../../assets/images/background-comming-soon.jpg') no-repeat scroll center center;
+    background-size: cover;
+    height: 100%;
+}
+.comming-soon-content {
+    text-align: center;
+    padding: 110px 0 40px 0;
+    .logo {
+        margin-bottom: 30px;
+    }
+    .title {
+        margin-bottom: 100px;
+        letter-spacing: 4px;
+    }
+    #count-down-time {
+        margin-bottom: 325px;
+        .count-down-item{
+            display: inline-block;
+            padding: 5px 0px;
+            border: 2px solid #fff;
+            width: 90px;
+            height: 120px;
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0px;
+            }
+            span {
+                display: block;
+                &:first-child {
+                    font-size: 45px;
+                    font-weight: bold;
+                    // margin-bottom: 5px;
+                }
+                &:nth-child(2) {
+                    font-family: 'Raleway', sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .email-subcribe {
+        .email-subcribe-text {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        form {
+            width: 350px;
+            position: relative;
+            margin: 0 auto;
+            input {
+                border: none;
+            }
+            input[type="email"] {
+                width: 100%;
+                padding: 15px 20px;
+                color: $black-title;
+                &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color: #999;
+                    font-size: 15px;
+                  }
+                  &::-moz-placeholder { /* Firefox 19+ */
+                    color: #999;
+                    font-size: 15px;
+                  }
+                  &:-ms-input-placeholder { /* IE 10+ */
+                    color: #999;
+                    font-size: 15px;
+                  }
+                  &:-moz-placeholder { /* Firefox 18- */
+                    color: #999;
+                    font-size: 15px;
+                  }
+            }
+            input[type="submit"] {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 14px 26px;
+            }
+        }
+    }
+}

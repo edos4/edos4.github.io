@@ -1,0 +1,47 @@
+/* 15. Blog Page  ------------------------------------------*/
+
+.page-blog {
+    padding: 100px 0 40px 0;
+    .blog-content {
+        .item {
+            .info {
+                .desc {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.blog-content {
+    .item {
+        margin-bottom: 60px;
+    }
+}
+
+.blog-list {
+    padding: 80px 0 35px 0;
+    .blog-content {
+        .item {
+            .btn-read-more {
+                padding-bottom: 65px;
+                a {
+                    padding: 15px 45px;
+                    &:before {
+                        padding: 16px 45px;
+                    }
+                }
+            }
+            .info {
+                .title {
+                    padding: 40px 0 0px 0;
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+                .desc {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

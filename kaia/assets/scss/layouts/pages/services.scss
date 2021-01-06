@@ -1,0 +1,131 @@
+/* 21. Service Page  ------------------------------------------*/
+
+// Heading page
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+.heading-page {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .heading-page-content {
+        .page-title {
+            h1 {
+                animation: 500ms linear 1000ms normal both 1 running fadeInUp;
+                -moz-animation: 500ms linear 1000ms normal both 1 running fadeInUp;
+                -webkit-animation: 500ms linear 1000ms normal both 1 running fadeInUp;
+                -o-animation: 500ms linear 1000ms normal both 1 running fadeInUp;
+                -ms-animation: 500ms linear 1000ms normal both 1 running fadeInUp;
+            }
+        }
+        text-align: center;
+        width: 100%;
+    }
+}
+
+// Trending
+.trending {
+    padding: 100px 0;
+}
+.trending-content {
+    .item {
+        padding-top: 80px;
+        position: relative;
+        figure {
+            position: relative;
+            z-index: 6;
+            .figure-info {
+                transition: transform 0.6s;
+            }
+            .info {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+                .title {
+                    padding: 20px 0 5px 0;
+                    h3 {
+                        color: #fff;
+                    }
+                }
+                .desc {
+                    color: #f2f2f2;
+                }
+            }
+            &:hover {
+                .figure-info {
+                    transform: translateY(-83px);
+                    background: $yellow;
+                    padding: 5px;
+                }
+                .see-more {
+                    // visibility: visible;
+                    opacity: 1;
+                }
+            }
+            
+        }
+    }
+}
+
+// Statistics
+.statistics-content {
+    padding: 50px 0;
+    .item {
+        figure {
+            padding: 0px;
+        }
+        &:hover {
+            figure {
+                img {
+                    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+                    filter: grayscale(50%);
+                }
+            }
+        }
+        .info {
+            margin-top: -5px;
+            .count {
+                font-size: 25px;
+                font-weight: bold;
+                color: $yellow;
+            }
+        }
+    }
+}
+
+//Our Services
+.services-pages {
+    padding: 80px 0 40px 0;
+    .services-pages-content {
+        .item {
+            margin-bottom: 55px;
+            .info {
+                .desc {
+                    margin-bottom: 10px;
+                }
+                .read-more {
+                    color: $black-title;
+                    font-weight: bold;
+                }
+                &:hover {
+                    .title {
+                        h3 {
+                            color: $yellow;
+                        }
+                    }
+                    .read-more {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}

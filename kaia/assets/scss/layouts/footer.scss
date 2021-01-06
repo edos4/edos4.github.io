@@ -1,0 +1,105 @@
+/* 9. Footer ------------------------------------------*/
+.footer-top {
+    .footer-top-content {
+        font-size: 15px;
+        padding: 60px 0px;
+        .footer-info {
+            .footer-logo {
+                padding: 0px 0px 20px 0px;
+            }
+            .info-desc {
+                // padding: 20px 0px;
+                padding-bottom: 20px;
+            }
+        }
+        .footer-links {
+            ul {
+                width: 50%;
+                float: left;
+                @extend list-type-ulli;
+                li {
+                    a {
+                        display: block;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 15px;
+                        color: #666;
+                        &:hover {
+                            color: $black-title;
+                            font-weight: 600;
+                        }
+                    }
+                    margin-bottom: 12px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .footer-links-menu {
+                // @extend display-flex;
+                // @include justify-content(space-between);
+            }
+        }
+        .footer-contact {
+            ul {
+                @extend list-type-ulli;
+                li {
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    .fa {
+                        color: $yellow;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        .footer-work-time {
+            .work-time-desc {
+                margin-bottom: 15px;
+            }
+            .work-time {
+                span{
+                    margin-bottom: 4px;
+                    span {
+                        &:last-child {
+                            color: #333;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-bottom {
+    background: #333;
+    color: #999;
+    padding: 15px 0px;
+    .footer-bottom-content {
+        .copyright {
+            span {
+                color: $yellow;
+            }
+        }
+        .footer-bottom-menu {
+            ul {
+                @extend list-type-ulli;
+                li {
+                    float: left;
+                    margin-right: 15px;
+                    a {
+                        color: #999;
+                        &:hover {
+                            color: $yellow;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+}

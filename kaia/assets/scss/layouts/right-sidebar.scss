@@ -1,0 +1,226 @@
+/* 12. Right Sidebar ------------------------------------------*/
+
+.right-sidebar {
+    > div {
+        margin-bottom: 38px;
+    }
+}
+.widget_product_categories {
+    ul {
+        margin-top: -12px;
+        @extend list-type-ulli;
+        li {
+            a {
+                color: $black-title;
+                font-size: 16px;
+                &:hover {
+                    color: $yellow;
+                }
+            }
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.widget_categories {
+    ul {
+        margin-top: -12px;
+        @extend list-type-ulli;
+        li {
+            a {
+                color: #666;
+                font-size: 16px;
+                span {
+                    float: right;
+                }
+                &:hover {
+                    color: $yellow;
+                }
+            }
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    } 
+}
+
+.widget_price_filter {
+    .price_slider_wrapper {
+        padding-top: 25px;
+        border-top: 1px solid $boder-color;
+        .ui-slider {
+            position: relative;
+            text-align: left;
+            margin-bottom: 20px;
+            .ui-slider-range, .ui-slider-handle {
+                background-color: $yellow;
+            }
+            .noUi-target {
+                // display: block;
+                border: 0;
+                margin-left: 17px;
+                
+                height: 4px;
+                // max-width: 90%;
+                @include border-radius(0);
+                @include box-shadow(none);
+                background: $grey-regular;
+
+            }
+            .noUi-connects {
+                @include border-radius(0px);
+                width: 91%;
+                margin-left: 3px;
+            }
+            .noUi-connect {
+                background-color: $yellow;
+                border: none;
+                box-shadow: none;
+                border-radius: 0px;
+                @include border-radius(0px);
+            }
+            .noUi-handle {
+                position: absolute;
+                z-index: 2;
+                width: 15px;
+                height: 15px;
+                @include border-radius(50%);
+                cursor: ew-resize;
+                outline: 0;
+                box-sizing: border-box;
+                opacity: 1;
+                background: $yellow;
+                border: none;
+                @include box-shadow(none);
+                top: -5px;
+                right: 0px;
+                &:after, &:before {
+                    width: 0px;
+                }
+
+            }
+            .noUi-handle-lower {
+                // left: 218px;
+            }
+        }
+        #value-lower, #value-upper {
+            position: relative;
+            padding-left: 8px;
+            &:before {
+                position: absolute;
+                content: "$";
+                left: 0;
+                top: -2px;
+            }
+        }
+        .ui-slider-horizontal {
+            height: 5px;
+        }
+        .price_slider_amount {
+            @extend display-flex;
+            @include justify-content(space-between);
+            @include align-items(center);
+            .price_label {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.widget_search {
+    form {
+        position: relative;
+        label {
+            display: block;
+        }
+        input[type="search"] {
+            width: 100%;
+            border: 1px solid $boder-color;
+            padding: 18px 25px;
+            @include input-placeholder(#808080);
+        }
+        &:before {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\f002";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            @include transform(translateY(-50%));
+            color: $black-title;
+            font-size: 14px;
+        }
+    }
+}
+
+.widget_tags {
+    ul {
+        @extend list-type-ulli;
+        li {
+            float: left;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            a {
+                color: #666;
+                padding: 4px 14px;
+                border: 1px solid #e6e6e6;
+                display: inline-block;
+                &:hover {
+                    color: #fff;
+                    border-color: #ffc20a;
+                }
+            }
+        }
+    }
+}
+
+.widget_lastest_entries {
+    ul {
+        @extend list-type-ulli;
+        li {
+            overflow: hidden;
+            margin-bottom: 15px;
+            figure {
+                width: 65px;
+                float: left;
+                &:hover {
+                    img {
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .info {
+                padding-left: 15px;
+                width: calc(100% - 65px);
+                float: right;
+                .title {
+                    margin-bottom: 5px;
+                    h3 {
+                        line-height: 1.4;
+                    }
+                    &:hover {
+                        h3 {
+                            color: $yellow;
+                        }
+                    }
+                }
+                .date {
+                    .fa {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

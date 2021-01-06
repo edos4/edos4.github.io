@@ -1,0 +1,23 @@
+/* 7. Dots ------------------------------------------*/
+.slick-dots {
+    bottom: 120px;
+    left: 50%;
+    li {
+        width: 13px;
+        button {
+            &:before {
+                color: #cccccc;
+                opacity: 1;
+                font-size: 11px;
+            }
+        }
+    }
+    li.slick-active {
+        button {
+            &:before {
+                color: $yellow;
+                opacity: 1;
+            }
+        }
+    }
+}

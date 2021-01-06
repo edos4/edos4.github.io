@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bricktower</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/css-hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="assets/vendor/revolution/layers.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/navigation.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/settings.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/settings-source.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/tp-color-picker.css">
+    <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+    <!-- page load-->
+	<div class="images-preloader">
+	    <div id="preloader_1" class="rectangle-bounce">
+          	<span></span>
+         	<span></span>
+          	<span></span>
+          	<span></span>
+          	<span></span>
+	    </div>
+    </div>
+    <header class="header header-1">
+        <div class="hidden-tablet-landscape-up header-mobile">
+            <div class="header-top-mobile">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Consulting" />
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <form method="POST">
+                            <input type="text" placeholder="Tìm kiếm" id="search-box" name="s" value="">
+                            <div class="search-icon font-color-white display-flex-center">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="au-nav-mobile">
+                <nav class="menu-mobile">
+                    <div>
+                        <ul class="au-navbar-menu">
+                            <li class="menu-item curent-menu-item">
+                                <a href="index.html" class="font-color-black">Home</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="index.html" class="font-color-black">Home 1</a></li>
+                                    <li class="menu-item"><a href="index2.html" class="font-color-black">Home 2</a></li>
+                                    <li class="menu-item"><a href="index3.html" class="font-color-black">Home 3</a></li>
+                                    <li class="menu-item"><a href="index4.html" class="font-color-black">Home 4</a></li>
+                                    <li class="menu-item"><a href="index5.html" class="font-color-black">Home 5</a></li>
+                                    <li class="menu-item"><a href="index6.html" class="font-color-black">Home 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="services1.html" class="font-color-black">Services</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="services1.html" class="font-color-black">services 1</a></li>
+                                    <li class="menu-item"><a href="services2.html" class="font-color-black">services 2</a></li>
+                                    <li class="menu-item"><a href="services3.html" class="font-color-black">services 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="projects1.html" class="font-color-black">Projects</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="projects1.html" class="font-color-black">projects 1</a></li>
+                                    <li class="menu-item"><a href="projects2.html" class="font-color-black">projects 2</a></li>
+                                    <li class="menu-item"><a href="projects3.html" class="font-color-black">projects 3</a></li>
+                                    <li class="menu-item"><a href="projects4.html" class="font-color-black">projects 4</a></li>
+                                    <li class="menu-item"><a href="projects5.html" class="font-color-black">projects 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="aboutus.html" class="font-color-black">About</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="shop.html" class="font-color-black">Shop</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                        <li class="menu-item"><a href="shop.html" class="font-color-black">Shop 1</a></li>
+                                    <li class="menu-item"><a href="shop2.html" class="font-color-black">Shop 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contactus.html" class="font-color-black">Contact us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="blog.html" class="font-color-black">Blog</a>
+                                <span class="arrow">
+                                    <i></i>
+                                </span>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="blog.html" class="font-color-black">Blog 1</a></li>
+                                    <li class="menu-item"><a href="blog2.html" class="font-color-black">Blog 2</a></li>
+                                    <li class="menu-item"><a href="blog3.html" class="font-color-black">Blog 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- <div class="clear"></div> -->
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="header-top-content display-flex">
+                        <div class="header-top-desc">
+                            We Are Specialists In Construction And Architecture!
+                        </div>
+                        <div class="header-top-info">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>(+1) 115 221 2564</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>info@example.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Building Cror, New York, NY 93459</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="hidden-tablet-landscape header-top">
+            <div class="container">
+                <div class="header-top-content display-flex">
+                    <div class="header-top-desc">
+                        We Are Specialists In Construction And Architecture!
+                    </div>
+                    <div class="header-top-info">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>(+1) 115 221 2564</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>info@example.com</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>Building Cror, New York, NY 93459</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-tablet-landscape header-bottom" id="js-navbar-fixed">
+            <div class="container">
+                <div class="header-bottom-content display-flex">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                    <nav class="menu">
+                        <div>
+                            <ul class="menu-primary">
+                                <li class="menu-item curent-menu-item">
+                                    <a href="index.html" class="font-color-black">Home</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="index.html" class="font-color-black">Home 1</a></li>
+                                        <li class="menu-item"><a href="index2.html" class="font-color-black">Home 2</a></li>
+                                        <li class="menu-item"><a href="index3.html" class="font-color-black">Home 3</a></li>
+                                        <li class="menu-item"><a href="index4.html" class="font-color-black">Home 4</a></li>
+                                        <li class="menu-item"><a href="index5.html" class="font-color-black">Home 5</a></li>
+                                        <li class="menu-item"><a href="index6.html" class="font-color-black">Home 6</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="services1.html" class="font-color-black">Services</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="services1.html" class="font-color-black">services 1</a></li>
+                                        <li class="menu-item"><a href="services2.html" class="font-color-black">services 2</a></li>
+                                        <li class="menu-item"><a href="services3.html" class="font-color-black">services 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="projects1.html" class="font-color-black">Projects</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="projects1.html" class="font-color-black">projects 1</a></li>
+                                        <li class="menu-item"><a href="projects2.html" class="font-color-black">projects 2</a></li>
+                                        <li class="menu-item"><a href="projects3.html" class="font-color-black">projects 3</a></li>
+                                        <li class="menu-item"><a href="projects4.html" class="font-color-black">projects 4</a></li>
+                                        <li class="menu-item"><a href="projects5.html" class="font-color-black">projects 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="aboutus.html" class="font-color-black">About</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="shop.html" class="font-color-black">Shop</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="shop.html" class="font-color-black">Shop 1</a></li>
+                                        <li class="menu-item"><a href="shop2.html" class="font-color-black">Shop 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contactus.html" class="font-color-black">Contact us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="blog.html" class="font-color-black">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="blog.html" class="font-color-black">Blog 1</a></li>
+                                        <li class="menu-item"><a href="blog2.html" class="font-color-black">Blog 2</a></li>
+                                        <li class="menu-item"><a href="blog3.html" class="font-color-black">Blog 3</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Heading page -->
+        <section class="heading-page">
+            <img src="assets/images/service/service-banner-background.jpg" alt="">
+            <div class="heading-page-content position-center">
+                <div class="page-title">
+                    <h1>Curabitur venenatis efficitur.</h1>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="blog.html">Blog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Curabitur venenatis efficitur.</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Blog detail -->
+        <section class="single">
+            <h4 class="heading-section">Heading section</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                        <div class="single-content blog-content">
+                            <article class="item">
+                                <figure>
+                                    <a href="single.html">
+                                        <img src="assets/images/blog/blog-list-1.jpg" alt="">
+                                    </a>
+                                    <div class="post-date">
+                                        <span>Jun</span>
+                                        <span>24</span>
+                                    </div>
+                                </figure>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="single.html">
+                                            <h3 class="title-regular">
+                                                Nulla Bibendum Lorem Sit.
+                                            </h3>
+                                        </a>
+                                    </div>
+                                    <div class="entry">
+                                        <span class="author"><i class="fa fa-user" aria-hidden="true"></i> by Admin</span>
+                                        <span class="categories"><i class="fa fa-folder" aria-hidden="true"></i><a href="#">SEO Developer</a></span>
+                                        <span class="total-comments"><i class="fa fa-comment" aria-hidden="true"></i> 03 Comments</span>
+                                        <span class="total-view"><i class="fa fa-eye" aria-hidden="true"></i> 35 Viewer</span>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                        Proin eu est ac odio sodales consequat pulvinar vitae ex. In eget pretium ante. Praesent sagittis quam nulla, non placerat ligula tempus eu. Donec vitae eros felis. 
+                                        Quisque tempor luctus urna sit amet imperdiet. Curabitur ultrices velit eget metus viverra elementum. Donec sit amet neque sit amet orci suscipit convallis. Aenean leo metus, egestas et faucibus vitae, commodo non lectus.
+                                    </p>
+                                    <div class="quote">
+                                        <div class="quote-content">
+                                            <div class="quote-icon">
+                                                <figure>
+                                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                </figure>
+                                                <p>
+                                                    Curabitur ultrices velit eget metus viverra elementum. Donec sit amet neque sit amet orci suscipit convallis. 
+                                                    Aenean leo metus, egestas et faucibus vitae, commodo non lectus sodales viverra lacus, ut fringilla leo.
+                                                </p>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                                Proin eu est ac odio sodales consequat pulvin vitae ex. In eget pretium ante. Praesent sagittis quam nulla, non placerat ligula tempus eu. 
+                                                Donec vitae eros felis. Quisque tempor luctus urna sit amet imperdiet venenatis efficitur libero, Aenean fringilla felis vel urna elementum, 
+                                                sed blandit nisi sollicitudin. Sed nulla dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis nisl eget sapien accumsan viverra. 
+                                                Aenean fringilla felis vel urna elementum, sed blandit nisi sollicitudin. Sed nulla dolor
+                                            </p>
+                                            <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                                    Proin eu est ac odio sodales consequat pulvin vitae ex. In eget pretium ante. Praesent sagittis quam nulla, non placerat ligula tempus eu.
+                                            </p>
+                                            
+                                        </div>
+                                        <div class="quote-image">
+                                            <figure>
+                                                <img src="assets/images/blog-detail/quote.jpg" alt="">
+                                            </figure>
+                                            <div class="title-regular">Kathryn Weaver</div>
+                                            <div class="position">Worker in Ensuhouse</div>
+                                        </div>
+                                    </div>
+                                    <div class="project-development">
+                                        <div class="title">
+                                            <h3 class="title-bold">
+                                                Project Development.
+                                            </h3>
+                                        </div>
+                                        <div class="project-development-content">
+                                            <p>
+                                                Donec vitae efficitur erat. Duis et accumsan lectus. Nunc in aliquam elit. Nunc eget magna varius, vehicula ante non, consequat sapien. 
+                                                Maecenas sollicitudin euismod mi laoreet auctor. Etiam fringilla eu quam in ultricies. Cras vulputate maximus convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque tempus nibh non felis cursus maximus et in leo. Phasellus a justo quis tellus elementum vestibulum. Etiam fringilla vestibulum justo, et tempor massa elementum quis. Vestibulum ac orci id sapien hendrerit pulvinar a id lorem.
+                                            </p>
+                                            <p>
+                                                Curabitur vitae neque consectetur, dictum diam a, cursus augue. Integer pharetra tincidunt magna, sed porttitor ipsum condimentum tempus. 
+                                                Suspendisse vestibulum mollis libero. Suspendisse sit amet urna velit. Curabitur a magna varius, aliquam quam vel, condimentum justo. Nunc id massa sodales, sagittis nulla ac, vestibulum tortor. Aliquam ut mi pulvinar, vulputate erat quis, tempus diam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tags-socials display-flex">
+                                    <div class="tags">
+                                        <i class="fa fa-tag" aria-hidden="true"></i>
+                                        <a href="#">Construction,</a>
+                                        <a href="#">Awards,</a>
+                                        <a href="#">Contract</a>
+                                    </div>
+                                    <div class="socials display-flex">
+                                        Share: 
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="box-comments">
+                                        <div class="box-title">
+                                            <h3 class="title-bold-24">Latest Comments</h3>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="comment-detail">
+                                                    <figure>
+                                                        <img src="assets/images/blog-detail/lastest-comment-1.jpg" alt="">
+                                                    </figure>
+                                                    <div class="comment-info">
+                                                        <div class="info-name display-flex">
+                                                            <div class="title">
+                                                                <span class="title-regular">Gerald Obrien</span><span class="position"> - Manager In Envato</span>
+                                                                <div class="date-time">24 Jun, 2018  at  18:06pm</div>
+                                                            </div>
+                                                            <a href="#" class="btn-reply btn-global btn-yellow">Reply</a>
+                                                        </div>
+                                                        <div class="desc">
+                                                            Maecenas semper libero in aliquet tristique. Fusce id nisi ut nisl laoreet consectetur a quis velit. Nulla ac lacus non orci venenatis bibendum. 
+                                                            Etiam posuere lorem pulvinar sapien sagittis consectetur. Aliquam convallis eget enim nec elementum. Fusce ac sapien neque. Duis sed mi id elit 
+                                                            feugiat tincidunt quis eu turpis.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="sub-comments">
+                                                    <li>
+                                                        <div class="comment-detail">
+                                                            <figure>
+                                                                <img src="assets/images/blog-detail/lastest-comment-2.jpg" alt="">
+                                                            </figure>
+                                                            <div class="comment-info">
+                                                                <div class="info-name display-flex">
+                                                                    <div class="title">
+                                                                        <span class="title-regular">Christina Stewart </span><span class="position"> -  Manager In Ensuhouse</span>
+                                                                        <div class="date-time">24 Jun, 2018  at  19:00pm</div>
+                                                                    </div>
+                                                                    <a href="#" class="btn-reply btn-global btn-yellow">Reply</a>
+                                                                </div>
+                                                                <div class="desc">
+                                                                    Maecenas semper libero in aliquet tristique. Fusce id nisi ut nisl laoreet consectetur a quis velit. Nulla ac lacus non orci venenatis bibendum. 
+                                                                    Etiam posuere lorem pulvinar sapien sagittis consectetur. Aliquam convallis eget enim nec elementum. Fusce ac sapien neque. Duis sed mi id elit 
+                                                                    feugiat tincidunt quis eu turpis.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="comment-detail">
+                                                    <figure>
+                                                        <img src="assets/images/blog-detail/lastest-comment-3.jpg" alt="">
+                                                    </figure>
+                                                    <div class="comment-info">
+                                                        <div class="info-name display-flex">
+                                                            <div class="title">
+                                                                <span class="title-regular">Mildred Morales</span><span class="position"></span>
+                                                                <div class="date-time">25 Jun, 2018  at  08:00am</div>
+                                                            </div>
+                                                            <a href="#" class="btn-reply btn-global btn-yellow">Reply</a>
+                                                        </div>
+                                                        <div class="desc">
+                                                            Donec nunc ex, suscipit a faucibus at, euismod sit amet nibh. Praesent dapibus tincidunt elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut bibendum metus. Proin nibh lorem, 
+                                                            rhoncus a scelerisque sed, commodo ut odio. Nullam nec libero nibh. Suspendisse venenatis molestie congue. Suspendisse quis viverra est, ac sagittis lacus.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="comment-detail">
+                                                    <figure>
+                                                        <img src="assets/images/blog-detail/lastest-comment-4.jpg" alt="">
+                                                    </figure>
+                                                    <div class="comment-info">
+                                                        <div class="info-name display-flex">
+                                                            <div class="title">
+                                                                <span class="title-regular">Madison Alvarado </span><span class="position"> -  Developer In Envato</span>
+                                                                <div class="date-time">28 Jun, 2018  at  11:00am</div>
+                                                            </div>
+                                                            <a href="#" class="btn-reply btn-global btn-yellow">Reply</a>
+                                                        </div>
+                                                        <div class="desc">
+                                                            Donec scelerisque erat eros, ut rutrum dolor maximus vitae. Vivamus id mollis arcu, nec maximus augue. Sed sed nunc eu turpis pharetra tincidunt. Nulla mattis turpis vitae dictum auctor. 
+                                                            Phasellus sodales velit tellus. Nullam eget risus facilisis, pharetra lectus a, suscipit odio. Nam non massa porta, pulvinar leo aliquet, elementum dolor.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="leave-comment">
+                                        <div class="box-title">
+                                            <h3 class="title-bold-24">Leave A Comments</h3>
+                                        </div>
+                                        <div class="comment-form">
+                                            <form method="POST">
+                                                <div class="wrap-group">
+                                                    <input type="text" name="name" placeholder="Your Name*" required>
+                                                </div>
+                                                <div class="wrap-group">
+                                                    <input type="email" name="email" placeholder="Your email*" required>
+                                                </div>
+                                                <div class="wrap-group">
+                                                    <input type="text" name="phonenumber" placeholder="Your Phone*" required>
+                                                </div>
+                                                <div class="wrap-group">
+                                                    <input type="text" name="more" placeholder="More Information">
+                                                </div>
+                                                <div class="wrap-group">
+                                                    <textarea name="name" placeholder="Comments*" required></textarea>
+                                                </div>
+                                                <div class="wrap-group">
+                                                    <input type="submit" class="btn-submit" name="more" value="Submit">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 pl-xl-4">
+                        <section class="right-sidebar">
+                            <div class="widget_search">
+                                <form method="POST" class="search-form">
+                                    <label>
+                                        <input type="search" name="s" placeholder="Search Products...">
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="widget_categories">
+                                <div class="widget-title title-bold">
+                                    Categories
+                                </div>
+                                <ul>
+                                    <li><a href="#">Innovative Technology <span>(25)</span></a></li>
+                                    <li><a href="#">Natural Power<span>(16)</span></a></li>
+                                    <li><a href="#">Industrial Development <span>(04)</span></a></li>
+                                    <li><a href="#">Advanced Machinery<span>(10)</span></a></li>
+                                    <li><a href="#">Architectural Engineer<span>(08)</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="widget_lastest_entries">
+                                <div class="widget-title title-bold">
+                                    Latest Post
+                                </div>
+                                <ul>
+                                    <li>
+                                        <figure>
+                                            <a href="#"><img src="assets/images/lastest-post-1.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="info">
+                                            <div class="title">
+                                                <h3 class="title-regular-14">
+                                                    <a href="#" class="font-color-black">
+                                                        Lorem ipsum dolor sit  consectetur.
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                            <div class="date">
+                                                <i class="fa fa-calendar-o" aria-hidden="true"></i>JUN 18, 2018
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="#"><img src="assets/images/lastest-post-2.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="info">
+                                            <div class="title">
+                                                <h3 class="title-regular-14">
+                                                    <a href="#" class="font-color-black">
+                                                        Aenean tristique justo eget felis gravida.
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                            <div class="date">
+                                                <i class="fa fa-calendar-o" aria-hidden="true"></i>JUN 20, 2018
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="#"><img src="assets/images/lastest-post-3.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="info">
+                                            <div class="title">
+                                                <h3 class="title-regular-14">
+                                                    <a href="#" class="font-color-black">
+                                                        Maecenas sollicitudin euismod mi.
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                            <div class="date">
+                                                <i class="fa fa-calendar-o" aria-hidden="true"></i>JUN 22, 2018
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget_tags">
+                                <div class="widget-title title-bold">
+                                    Tags
+                                </div>
+                                <ul>
+                                    <li><a href="#" class="btn-global-hover">Construction</a></li>
+                                    <li><a href="#" class="btn-global-hover">Green Brick</a></li>
+                                    <li><a href="#" class="btn-global-hover">Building</a></li>
+                                    <li><a href="#" class="btn-global-hover">Architecture Design</a></li>
+                                    <li><a href="#" class="btn-global-hover">Hand Tool</a></li>
+                                    <li><a href="#" class="btn-global-hover">Blowers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner -->
+        <section class="partner background-grey p-t-70 p-b-70">
+            <h4 class="heading-section">Heading section</h4>
+            <div class="container">
+                <div class="partner-content">
+                    <div class="row">
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-1.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-2.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-3.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-4.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                        <article class="item">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/home/partner-1.png" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-info">
+                            <div class="footer-logo">
+                                <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                            </div>
+                            <div class="info-desc">
+                                Quisque vehicula aliquam maurion suscipit felis fermentum id. Quisque tempor neque. Fusce nec risus vitae urna interdum comer dapibus ante ipsum primi sorci.
+                            </div>
+                            <div class="socials">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-drupal" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-links">
+                            <div class="footer-title">
+                                <h3>useful links</h3>
+                            </div>
+                            <div class="footer-links-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-contact">
+                            <div class="footer-title">
+                                <h3>Contact us</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>(+1) 115 221 2564</span>
+                                </li>
+                                <li>
+                                        <i class="fa fa-fax" aria-hidden="true"></i>
+                                    <span>+1 (855) 203-5485</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>info@example.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Building Cror, New York, NY 93459</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-work-time">
+                            <div class="footer-title">
+                                <h3>Working hours</h3>
+                            </div>
+                            <div class="work-time-desc">
+                                Our support available to help you 24 hours a day, seven days a week.
+                            </div>
+                            <div class="work-time">
+                                <span class="display-flex">
+                                    <span>Monday-Friday:</span>
+                                    <span>9am to 5pm</span>
+                                </span>
+                                <span class="display-flex">
+                                    <span>Saturday:</span>
+                                    <span>10am to 2pm</span>
+                                </span>
+                                <span class="display-flex">
+                                    <span>Sunday:</span>
+                                    <span>Closed</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content display-flex">
+                    <div class="copyright">
+                            Copyright © 2018 Construction Theme Demo - Theme by <span>AuThemes</span>
+                    </div>
+                    <div class="footer-bottom-menu">
+                        <ul>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <div id="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/isotope-docs.min.js"></script>
+    <script src="assets/vendor/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
+    <script src="assets/js/theme-map.js"></script>
+
+    <!-- REVOLUTION JS FILES -->
+    <script src="assets/js/revolution/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/js/revolution/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLICEY ADD-ON FILES -->
+    <script src='assets/js/revolution/revolution.addon.slicey.min.js?ver=1.0.0'></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <!-- <script src="assets/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script> -->
+
+    <script src="assets/js/config-contact.js"></script>
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>

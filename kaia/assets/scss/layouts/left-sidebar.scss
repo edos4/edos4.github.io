@@ -1,0 +1,40 @@
+/* 11. Left Sidebar ------------------------------------------*/
+
+.left-sidebar {
+    > div {
+        margin-bottom: 40px;
+    }
+}
+.all-services {
+    ul {
+        @extend list-type-ulli;
+        li {
+            background: $grey-regular;
+            margin-bottom: 10px;
+            a{
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $black-title;
+                display: block;
+                padding: 17px 25px;
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            &:hover {
+                background: $yellow;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        .active {
+            background: $yellow;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

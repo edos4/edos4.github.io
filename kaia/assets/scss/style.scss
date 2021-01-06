@@ -1,0 +1,63 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Extend
+2. Minxi
+3. Variables
+4. Global
+5. Arrows
+6. Breadcrumb 
+7. Dots 
+8. Fonts
+9. Footer
+10. Header
+11. Left Sidebar
+12. Right Sidebar
+13. 404 Page 
+14. About us Page 
+15. Blog Page
+16. Comming Soon Page
+17. Contact Page
+18. Left Sidebar
+19. Home Page
+20. Projects Page
+21. Service Page
+22. Shop Page
+23. Single Service Page
+24. Single Post Page
+25. Responsive
+-------------------------------------------------------------------*/
+//Common
+@import 'common/extend.scss';
+@import 'common/minxi.scss';
+@import 'common/variables.scss';
+@import 'common/global.scss';
+
+//components
+@import 'components/arrows.scss';
+@import 'components/breadcrumb.scss';
+@import 'components/dots.scss';
+
+//layout
+@import 'layouts/fonts.scss';
+@import 'layouts/footer.scss';
+@import 'layouts/header.scss';
+@import 'layouts/left-sidebar.scss';
+@import 'layouts/right-sidebar.scss';
+
+
+//Pages
+@import 'layouts/pages/404.scss';
+@import 'layouts/pages/aboutus.scss';
+@import 'layouts/pages/blog.scss';
+@import 'layouts/pages/comming-soon.scss';
+@import 'layouts/pages/contact.scss';
+@import 'layouts/pages/front-page.scss';
+@import 'layouts/pages/projects.scss';
+@import 'layouts/pages/services.scss';
+@import 'layouts/pages/shop.scss';
+@import 'layouts/pages/single-service.scss';
+@import 'layouts/pages/single.scss';
+
+// Responsive
+@import 'layouts/responsive.scss';

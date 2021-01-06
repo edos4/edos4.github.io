@@ -1,0 +1,65 @@
+/* 22. Shop Page  ------------------------------------------*/
+// Shop
+.shop {
+    padding: 80px 0 35px 0;
+}
+.shop-content {
+    .item {
+        margin-bottom: 65px;
+        figure {
+            border: 1px solid #e6e6e6;
+            // padding: 20px;
+            margin-bottom: 25px;
+            height: 220px;
+            text-align: center;
+            img {
+                width: 73%;
+            }
+            @include transition( all 0.5s ease 0s );
+            @include hover-big-img();
+            .btn-shop-now {
+                opacity: 0;
+                z-index: 5;
+                width: 100%;
+                text-align: center;
+                @include transition( opacity 0.8s );
+                a {
+                    @include border-radius(35px);
+                    padding: 11px 38px;
+                }
+            }
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+                .btn-shop-now {
+                    opacity: 1;
+                }
+            }
+        }
+        .info {
+            text-align: center;
+            .vote {
+                padding: 7px 0 2px 0;
+                .fa {
+                    color: $yellow;
+                }
+            }
+            .price {
+                span {
+                    font-size: 20px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: bold;
+                    color: $black-title;
+                }
+            }
+            .title {
+                &:hover {
+                    h3 {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}

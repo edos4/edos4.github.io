@@ -1,0 +1,13 @@
+/* 5. Arrows ------------------------------------------*/
+.slick-arrow {
+    position: absolute;
+    top: -50%;
+    transform: translateY(-50%);
+    color: $yellow;
+}
+.pre-arrows {
+    right: 27px;
+}
+.next-arrows {
+    right: 0;
+}

@@ -1,0 +1,30 @@
+/* 14. 404 Page ------------------------------------------*/
+.error {
+    background: #fff url('../../assets/images/bg-404.jpg') no-repeat scroll center center;
+    background-size: cover;
+    padding: 100px;
+}
+.error-content {
+    .error-content-img {
+        text-align: center;
+        padding: 0 30px;
+    }
+    .error-content-info {
+        padding: 0 40px;
+        .error-title {
+            h1 {
+                color: #fff;
+                font-size: 120px;
+                font-weight: bold;
+                line-height: 1.4;
+            }
+        }
+        .error-desc {
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+            font-style: italic;
+            color: $grey-regular;
+            margin-bottom: 70px;
+        }
+    }
+}

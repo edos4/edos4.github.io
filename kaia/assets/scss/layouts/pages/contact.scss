@@ -1,0 +1,165 @@
+/* 17. Contact Page  ------------------------------------------*/
+
+// Map
+.map {
+    position: relative;
+    .js-map-holder {
+        height: 450px;
+    }
+    .logo {
+
+        figure {
+            width: 60px;
+            height: 60px;
+            border: 4px solid #fbd257;
+            @include border-radius(50%);
+            background: #fff;
+            @extend display-flex;
+            @include justify-content(center);
+            @include align-items(center);
+            position: relative;
+            &:after {
+                position: absolute;
+                content: "";
+                width: 0px;
+                height: 0px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 15px solid #fbd257;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+// Contact us
+.contact-us {
+    padding: 80px 0 100px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.contact-title {
+    text-align: center;
+    position: relative;
+    margin-bottom: -20px;
+    h2 {
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 4;
+        width: 250px;
+        background: #fff;
+        margin: 0 auto;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #e6e6e6;
+        top: 50%;
+        left: 0;
+        @include transform(translateY(-50%));
+        z-index: 3;
+    }
+}
+.contact-us-content {
+    padding: 100px 0 65px;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    .contact-form {
+        padding: 0 40px 0 175px;
+        form {
+            .wrap-group {
+                margin-bottom: 20px;
+                label {
+                    display: block;
+                    font-size: 15px;
+                    color: #555;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                }
+                input, textarea {
+                    border: 1px solid #e6e6e6;
+                    padding: 11px 20px;
+                    display: block;
+                    width: 100%;
+					&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					  color: #888888;
+					}
+					&::-moz-placeholder { /* Firefox 19+ */
+					  color: #888888;
+					}
+					&:-ms-input-placeholder { /* IE 10+ */
+					  color: #888888;
+					}
+					&:-moz-placeholder { /* Firefox 18- */
+					  color: #888888;
+					}
+                }
+                textarea {
+                    height: 130px;
+                    margin-bottom: 15px;
+                }
+                input[type="submit"] {
+                    border: none;
+                    width: auto;
+                    padding: 13px 40px;
+                    display: inline-block;
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                    padding-top: 15px;
+                }
+            }
+        }
+
+    }
+    .contact-info {
+        padding-left: 40px;
+        ul {
+            @extend list-type-ulli;
+            li {
+                margin-bottom: 70px;
+                @extend display-flex;
+                span {
+                    padding: 0 30px;
+                    font-size: 20px;
+                    color: $black-title;
+                }
+                .contact-info-content {
+                    .desc {
+                        font-size: 16px;
+                        color: #555;
+                        padding-top: 10px;
+                        .socials {
+                            ul {
+                                li {
+                                    margin-bottom: 0px;
+                                    margin-right: 10px;
+                                    a {
+                                        color: #808080;
+                                        width: 35px;
+                                        height: 35px;
+                                        background: #f2f2f2;
+                                        text-align: center;
+                                    }
+                                    &:last-child {
+                                        margin-right: 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
